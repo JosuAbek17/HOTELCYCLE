@@ -30,7 +30,6 @@ function login() {
 }
 
 function about() {
-    $(".div1").toggle("slow");
     $(".div2").show();
     // $(".div1").hide();
 

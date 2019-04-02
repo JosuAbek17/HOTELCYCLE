@@ -459,7 +459,7 @@ hr {
 /* CONTACTO IMG */
 
 .contacto {
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-image: url("../img/footer.png");
 }
