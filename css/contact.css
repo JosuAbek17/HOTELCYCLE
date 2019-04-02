@@ -1,0 +1,249 @@
+html,
+h5,
+h1,
+p {
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.contacto {
+    padding: 30px;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #2e383f;
+}
+
+.navbar {
+    margin-bottom: 0;
+    padding: 15px;
+    justify-content: normal;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
+    border: 0 !important;
+    clear: both;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    background-color: #2e383f;
+    padding: 30px;
+    align-content: center;
+    text-align: center;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    color: #7a8186;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: uppercase;
+    word-spacing: 1px;
+}
+
+.foot-row {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.foot-col i {
+    font-size: 24px;
+    color: #99a0a5;
+}
+
+.foot-col img {
+    width: 64px;
+    margin: 10px 0;
+}
+
+.info {
+    max-width: 500px;
+}
+
+.social {
+    max-width: 300px;
+    padding: 20px;
+}
+
+.copy p {
+    font-size: 12px !important;
+    margin: 0;
+}
+
+.info p {
+    color: #f1d900;
+    margin: 0;
+}
+
+.foot-col {}
+
+.foot-col p {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.foot-col a {
+    color: white;
+    text-decoration: none;
+}
+
+.foot-col a:hover {
+    color: #f1d900;
+    text-decoration: none;
+}
+
+
+/* CHAT */
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.col-p {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    padding: 30px;
+}
+
+.col-p p {
+    padding: 20px;
+}
+
+#output {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+input {
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
+    color: #000;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 20px;
+    border: solid 3px black;
+    border-radius: 15px;
+}
+
+hr {
+    max-width: 550px;
+    border: .7px solid black
+}
+
+.row-chat {
+    margin: auto;
+    max-width: 1200px;
+    padding-top: 70px;
+}
+
+.col-chat {
+    padding: 42px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.col-p span {
+    text-decoration: none;
+    background-color: #9ddee1;
+}
+
+.bot {
+    width: 300px;
+    float: right;
+}
+
+
+/* CONTACTO IMG */
+
+.row-contact {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.col-contact {
+    padding: 30px;
+}
+
+.col-contact img {
+    width: 100px;
+}
+
+.col-contact h5 {
+    font-size: 1.225em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.col-contact p {
+    font-weight: 300;
+}
+
+
+/* MAP */
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+
+/* ANIMACION */
+
+.animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 3.4s;
+    animation-duration: 3.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}

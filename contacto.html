@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/jquery.convform.css">
+
+</head>
+
+<body>
+    <header class="header"></header>
+    <div class="container-fluid contacto">
+
+
+        <div class="row row-chat">
+            <div class="col-md-12 col-sm-12 col-p animated fadeIn fast">
+                <h1>CONTACTO</h1>
+                <p>Mantente en contacto con nosotros para estar informado de las <span>ultimas actualizaciones</span> y los proximos eventos </p>
+                <button onclick="setChat()" type="button" class="boton btn btn-primary">Chat</button>
+            </div>
+            <div class="col-md-9 col-sm-9 col-chat animated fadeIn fast">
+                <div id="output"></div>
+
+                <div id="container">
+                    <input type="text" id="input" value="">
+                    <button onclick="setCont()" type="button" class="boton2 btn btn-primary">Volver</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-chat animated fadeIn fast">
+                <img class="bot" src="img/bot.gif" alt="bot">
+            </div>
+        </div>
+        <hr class="animated fadeIn fast">
+        <div class="row row-contact animated fadeIn fast">
+            <div class="col-md-4 col-sm-4 col-contact">
+                <img src="img/correo.png" alt="#"><br>
+                <h5>Email Us</h5><br>
+                <p><a href="mailto:hello@jbidigital.co.uk">hello@jbidigital.co.uk</a></p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-contact">
+                <img src="img/phone.png" alt="#"><br>
+                <h5>Call Us</h5><br>
+                <p>020 7043 2510</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-contact">
+                <img src="img/casa.png" alt="#"><br>
+                <h5>Visit Us</h5><br>
+                <p>24 Queen Anne St,<br>London W1G 9AY</p>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+
+    </div>
+
+    <footer class="footer"></footer>
+    <!-- <div class="row">
+            <div class="col-md-12">
+                <form action="AccesControler?opcion=contacto" method="post">
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" name="usern" class="form-control" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Apellidos</label>
+                        <input type="text" name="apellidos" class="form-control" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="correo" class="form-control" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label>telefono</label>
+                        <input type="number" name="telefono" class="form-control" required>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <a href="index.html">Volver</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3MF1Or8S3Lvj3zA3VUFhlcFvTQH6YIiQ" async defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

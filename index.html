@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png" style="width:32px;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Hotel Cycle</title>
+</head>
+
+<body>
+    <header class="header"></header>
+    <div id="inicio" class="container-fluid div1">
+
+        <div class="row f-row">
+            <!-- <div class="col-md-6 col-sm-6 f-col">
+                <h4><a onclick="login()" href="#" class="inicio">Inicio de Sesión</a></h4>
+            </div>
+            <div class="col-md-6 col-sm-6 f-col">
+                <h4><a onclick="registro()" href="#" class="registro">Registro</a></h4>
+            </div> -->
+            <div class="col-md-12 elegir animated fadeIn fast">
+                <div class="login animated fadeIn fast"><button type="button" class="btn btn1 btn-info" onclick="login()">Login</button></div>
+                <div class="registro animated fadeIn fast"><button type="button" class="btn btn1 btn-info" onclick="registro()">Registro</button></div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-inicio animated fadeIn fast">
+                <h4>Login</h4>
+                <form class="form" action="AccesControler?opcion=validar" method="post">
+                    <div class="input-group f-fgr">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="user" type="text" class="form-control" name="user" placeholder="Usuario" required>
+                    </div>
+                    <div class="input-group f-fgr">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
+                        <input id="password" type="password" class="form-control" name="pass" placeholder="Password" required>
+                    </div>
+                    <div class="f-fgr">
+                        <button type="button" class="btn btn2 btn-info btn-block" value="Enviar">Entrar</button>
+                    </div>
+                    <a class="a" href="#" onclick="volver()">Volver</a>
+                    <hr>
+                </form>
+            </div>
+            <div class="col-md-12 col-sm-12 col-registro animated fadeIn fast">
+                <h4>Registro</h4>
+                <form class="form" action="AccesControler?opcion=validar" method="post">
+                    <div class="input-group f-fgr">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="user" type="text" class="form-control" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="input-group f-fgr">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="user" type="text" class="form-control" name="apellidos" placeholder="Apellido" required>
+                    </div>
+                    <div class="input-group f-fgr">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="user" type="text" class="form-control" name="usern" placeholder="Usuario" required>
+                    </div>
+                    <div class="input-group f-fgr">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
+                        <input id="user" type="text" class="form-control" name="passn" placeholder="Password" required>
+                    </div>
+                    <div class="input-group f-fgr">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input id="password" type="password" class="form-control" name="correo" placeholder="email" required>
+                    </div>
+                    <div class="f-fgr">
+                        <button type="button" class="btn btn2 btn-info btn-block" value="Enviar">Registro</button>
+                    </div>
+                    <a class="a" href="#" onclick="volver()">Volver</a>
+                    <hr>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <div id="nosotros" class="container-fluid row div2 animated fadeIn fast">
+        <div class="ab-row row">
+
+        </div>
+    </div>
+    <div id="stay" class="container-fluid row div3 animated fadeIn fast">
+        <div class="stay-row row">
+
+        </div>
+    </div>
+    <div id="comer" class="container-fluid row div4 animated fadeIn fast">
+        <div class="comer-row row">
+
+        </div>
+    </div>
+    <div id="shop" class="container-fluid row div5 animated fadeIn fast">
+        <div class="shop-row row">
+
+        </div>
+    </div>
+    <!-- <div class="ab-row-i row">
+            <div class="ab-col col-md-3 col-sm-3">
+                <p><a href=""><i class="ab-i material-icons">fingerprint</i></a>
+                </p>
+                <h5>Security</h5>
+
+            </div>
+            <div class="ab-col col-md-3 col-sm-3">
+                <p><a href=""><i class="ab-i material-icons">dvr</i></a>
+                </p>
+                <h5>Web Design</h5>
+
+            </div>
+            <div class="ab-col col-md-3 col-sm-3">
+                <p><a href=""><i class="ab-i material-icons">	aspect_ratio</i></a>
+                </p>
+                <h5>Responsive</h5>
+
+            </div>
+            <div class="ab-col col-md-3 col-sm-3">
+                <p><a href=""><i class="ab-i material-icons">cloud_queue</i></a>
+                </p>
+                <h5>Cloud</h5>
+
+            </div>
+        </div> -->
+
+    <!-- <div class="row div3 animated fadeIn fast">
+        <div class="col-md-12 col-emp">
+            <h2>Trabajamos con...</h2>
+        </div>
+
+
+        <div class="col-md-3 col-sm-3 col-emp one"><img src="img/one.png" alt=""> </div>
+        <div class="col-md-3 col-sm-3 col-emp eitb"><img src="img/eitb.png" alt=""></div>
+        <div class="col-md-3 col-sm-3 col-emp upv"><img src="img/upv.png" alt=""></div>
+        <div class="col-md-3 col-sm-3 col-emp iber"><img src="img/iber.png" alt=""></div>
+
+    </div> -->
+    <div id="contacto" class="contacto">
+
+
+
+        <div class="row row-chat container-fluid div6">
+
+
+
+
+
+            <div id="map" class="col-md-12 col-sm-12"></div>
+
+        </div>
+
+
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
