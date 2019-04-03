@@ -69,28 +69,38 @@ function setHeader() {
 
     var codeHeader = '';
     codeHeader += '    <div class="row logo-row">';
-    codeHeader += '    <div class="col-md-12 logo-col">';
-    codeHeader += '    <a href="index.html#inicio"><img src="../img/logo.png" alt="#"></a>';
+    codeHeader += '    <div class="col-md-12 col-sm-12 logo-col">';
+    codeHeader += '    <a href="index.html#inicio"><img class="center-block" src="../img/logo-nombre.png" alt="#"></a>';
     codeHeader += '    </div>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="row nav-row">';
-    codeHeader += '    <div class="col-md-2 col-sm-2 col-sm-offset-1 col-md-offset-1 nav-col">';
-    codeHeader += '                 <a onclick="about()" href="index.html#nosotros">Nosotros</a>';
+    codeHeader += '    <div class="col-md-6 col-sm-6 nav-col">';
+    codeHeader += '                 <a class="nav-a" onclick="stay()" href="index.html#stay">Stay</a>';
+    codeHeader += '                 <a class="nav-a" onclick="comer()" href="index.html#comer">Servicios</a>';
+    codeHeader += '                 <a class="nav-a" onclick="about()" href="index.html#nosotros">Nosotros</a>';
+    codeHeader += '                 <a class="nav-a" onclick="shop()" href="index.html#shop">Tienda</a>';
+    codeHeader += '                 <a class="nav-a" onclick="contacto()" href="index.html#contacto">Contacto</a>';
     codeHeader += '    </div>';
-    codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
-    codeHeader += '                 <a onclick="stay()" href="index.html#stay">Stay</a>';
+    // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
+    // codeHeader += '                 ';
+    // codeHeader += '    </div>';
+    // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
+    // codeHeader += '                 ';
+    // codeHeader += '    </div>';
+    // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
+    // codeHeader += '                 ';
+    // codeHeader += '    </div>';
+    // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
+    // codeHeader += '                 ';
+    // codeHeader += '    </div>';
+    codeHeader += '    <div class="col-md-6 col-sm-6 nav-col">';
+    codeHeader += '         <span>+34 941 672 208</span>';
+    codeHeader += '         <a class="nav-a reserva" href="#">RESERVA</a>';
+    codeHeader += '         <a class="nav-a" href="#">ES</a>';
+    codeHeader += '         <a class="nav-a" href="#">EN</a>';
     codeHeader += '    </div>';
-    codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
-    codeHeader += '                 <a onclick="comer()" href="index.html#comer">Come</a>';
     codeHeader += '    </div>';
-    codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
-    codeHeader += '                 <a onclick="shop()" href="index.html#shop">Tienda</a>';
-    codeHeader += '    </div>';
-    codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
-    codeHeader += '                 <a onclick="contacto()" href="index.html#contacto">Contacto</a>';
-    codeHeader += '    </div>';
-    codeHeader += '    </div>';
-    codeHeader += '    </div>';
+
 
     try {
         document.getElementsByTagName('header')[0].innerHTML = codeHeader;
@@ -165,4 +175,18 @@ function setMap() {
         map: mapa,
         title: "HOTEL CYCLE"
     })
+}
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 4 seconds
 }

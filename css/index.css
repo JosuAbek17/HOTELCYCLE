@@ -8,7 +8,33 @@ body {
 .div1 {
     padding: 30px;
     height: 100vh;
-    background-color: #3a7999;
+}
+
+.row-title {
+    text-align: center;
+    padding: 30px;
+}
+
+.col-title {}
+
+.carousel-item img {
+    width: 300px;
+    height: 420px;
+}
+
+.mySlides {
+    display: none;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.row-home {}
+
+.col-home {}
+
+.d-block {
+    width: 500px;
 }
 
 .elegir {
@@ -32,7 +58,7 @@ body {
 }
 
 .logo-row {
-    padding: 30px;
+    padding: 10px;
     width: 100%;
     height: auto;
     margin: 0;
@@ -41,19 +67,38 @@ body {
 .nav-row {
     width: 100%;
     margin: 0;
+    display: table;
+    padding: 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.nav-col {
+    padding: 0;
     text-align: center;
 }
 
-.nav-col {}
+.nav-col span {
+    font-size: 11px;
+}
 
 .nav-col a {
-    color: white;
+    color: #a4a4a4;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.reserva {
+    color: black !important;
+    font-weight: bold;
 }
 
 .logo-row img {
-    width: 100px;
+    width: 200px;
     display: block;
-    margin: auto;
 }
 
 .logo-col {
@@ -98,11 +143,6 @@ body {
 .f-row {
     max-width: 400px;
     margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
 }
 
 .f-col {
@@ -152,75 +192,34 @@ body {
 }
 
 
-/* QUE HACEMOS */
+/* STAY */
 
 .div2 {
     margin: 0;
     width: 100%;
-    padding: 50px;
+    padding: 100px;
     height: 100vh;
-    /* background-color: burlywood; */
-    background-image: url("../img/div2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.ab-row {
-    width: 100%;
-}
-
-.ab-h {
-    margin-bottom: 60px;
-    font-size: 46px;
-    font-weight: 400;
-}
-
-.ab-col {
-    text-align: center;
-    margin: auto;
-}
-
-.ab-col-p {
-    max-width: 800px;
-    margin: auto;
-}
-
-.ab-p {
-    margin: auto !important;
-    text-align: center;
-}
-
-.ab-sp {
-    text-decoration: none;
     background-color: #9ddee1;
 }
 
-.ab-row-i {
+.div2 img {
+    width: 300px;
+}
+
+.row-stay {
     width: 100%;
-    padding: 60px 0 0;
 }
 
-.ab-i {
-    font-size: 165px;
-    padding: 20px;
-}
-
-.ns {
-    margin: 0 100px;
-    background-color: black;
-    height: 0.1px;
-}
+.col-stay {}
 
 
-/* STAY */
+/* SERVICIOS */
 
 .div3 {
     margin: 0;
     width: 100%;
     padding: 50px;
     height: 100vh;
-    background-color: slategray;
 }
 
 .div3 h2 {
@@ -237,7 +236,6 @@ body {
 /* COMER */
 
 .div4 {
-    background-color: chocolate;
     margin: 0;
     width: 100%;
     padding: 50px;
@@ -248,7 +246,6 @@ body {
 /* SHOP */
 
 .div5 {
-    background-color: cornflowerblue;
     margin: 0;
     width: 100%;
     padding: 50px;
@@ -265,7 +262,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: transparent;
+    background-color: white;
 }
 
 .navbar-nav {}
@@ -308,7 +305,7 @@ footer {
     bottom: 0;
     left: 0; */
     width: 100%;
-    color: #7a8186;
+    color: black;
     font-size: 18px;
     line-height: 2;
     text-transform: uppercase;
@@ -322,12 +319,12 @@ footer {
 }
 
 .foot-col {
-    color: white;
+    color: black;
 }
 
 .foot-col i {
     font-size: 24px;
-    color: #99a0a5;
+    color: SteelBlue;
 }
 
 .foot-col img {
@@ -350,24 +347,25 @@ footer {
 }
 
 .info p {
-    color: #f1d900;
+    color: black;
     margin: 0;
 }
 
 .foot-col {}
 
 .foot-col p {
-    font-size: 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
     padding: 10px 0;
 }
 
 .foot-col a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 .foot-col a:hover {
-    color: #f1d900;
+    color: black;
     text-decoration: none;
 }
 
@@ -461,7 +459,6 @@ hr {
 .contacto {
     height: auto;
     width: 100%;
-    background-image: url("../img/footer.png");
 }
 
 .boton {
