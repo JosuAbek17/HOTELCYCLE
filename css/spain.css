@@ -1,0 +1,27 @@
+.spain {
+    padding: 0;
+    height: 100vh;
+}
+
+.row-ruta {
+    margin: 0;
+    width: 100%;
+    padding: 100px 50px;
+    height: 100vh;
+}
+
+.col-ruta {
+    padding: 0;
+}
+
+.col-ruta h3 {
+    text-align: center;
+}
+
+.col-ruta img {
+    width: 100%;
+}
+
+.header {
+    background-color: #4A8079 !important;
+}

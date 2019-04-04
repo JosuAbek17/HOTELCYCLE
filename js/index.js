@@ -11,6 +11,13 @@ $(document).ready(function() {
 
     setMap();
 })
+$(window).scroll(function() {
+    if ($(".header").offset().top > 100) {
+        $(".header").css("background-color", "#4A8079");
+    } else {
+        $(".header").css("background-color", "white");
+    }
+});
 
 function registro() {
     $(".div1").css("background-color", " rgba(0,0,0,0.7)");
@@ -38,15 +45,15 @@ function about() {
 }
 
 function stay() {
+    $(".div2").show();
+}
+
+function servicio() {
     $(".div3").show();
 }
 
-function comer() {
-    $(".div4").show();
-}
-
 function shop() {
-    $(".div5").show();
+    $(".div4").show();
 }
 
 function volver() {
@@ -70,15 +77,14 @@ function setHeader() {
     var codeHeader = '';
     codeHeader += '    <div class="row logo-row">';
     codeHeader += '    <div class="col-md-12 col-sm-12 logo-col">';
-    codeHeader += '    <a href="index.html#inicio"><img class="center-block" src="../img/logo-nombre.png" alt="#"></a>';
+    codeHeader += '    <a class="center-block titulo" href="index.html#inicio"><img class="center-block" src="../img/logo-nombre.png" alt="#"></a>';
     codeHeader += '    </div>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="row nav-row">';
     codeHeader += '    <div class="col-md-6 col-sm-6 nav-col">';
     codeHeader += '                 <a class="nav-a" onclick="stay()" href="index.html#stay">Stay</a>';
-    codeHeader += '                 <a class="nav-a" onclick="comer()" href="index.html#comer">Servicios</a>';
+    codeHeader += '                 <a class="nav-a" onclick="servicio()" href="index.html#servicio">Servicios</a>';
     codeHeader += '                 <a class="nav-a" onclick="about()" href="index.html#nosotros">Nosotros</a>';
-    codeHeader += '                 <a class="nav-a" onclick="shop()" href="index.html#shop">Tienda</a>';
     codeHeader += '                 <a class="nav-a" onclick="contacto()" href="index.html#contacto">Contacto</a>';
     codeHeader += '    </div>';
     // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
