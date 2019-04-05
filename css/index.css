@@ -2,12 +2,17 @@ html,
 body {
     scroll-behavior: smooth;
     margin: 0;
+    padding: 0;
     font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
 }
 
 .div1 {
-    padding: 30px;
+    padding: 0;
     height: 100vh;
+    background-image: url("../img/bike.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 .row-title {
@@ -69,7 +74,6 @@ body {
     margin: 0;
     display: table;
     padding: 10px;
-    border-bottom: 1px solid #dcdcdc;
 }
 
 .nav-col {
@@ -82,7 +86,7 @@ body {
 }
 
 .nav-col a {
-    color: #a4a4a4;
+    color: black;
     text-decoration: none;
     padding: 10px;
     text-transform: uppercase;
@@ -106,99 +110,15 @@ body {
     padding: 0;
 }
 
-.col-inicio {
-    background-color: aquamarine;
-    text-align: center;
-}
-
-.col-inicio a {
-    color: white;
-}
-
-.col-inicio h4 {
-    text-align: center;
-}
-
-.col-registro {
-    background-color: aquamarine;
-    text-align: center;
-}
-
-.col-registro a {
-    color: white;
-}
-
-.col-registro h4 {
-    text-align: center;
-}
-
-.inicio {
-    text-decoration: none;
-}
-
-.registro {
-    text-decoration: none;
-}
-
-.f-row {
-    max-width: 400px;
-    margin: auto;
-}
-
-.f-col {
-    text-align: center;
-}
-
-.f-col a {
-    color: wheat;
-}
-
-.f-col a:hover {
-    color: yellow;
-    text-decoration: none;
-}
-
-.form {
-    padding: 10px;
-}
-
-.f-col {
-    padding: 30px 20px;
-}
-
-.f-fgr {
-    padding: 25px 0;
-}
-
-.f-reg {
-    text-align: center;
-}
-
-.f-hr {
-    margin: 5px !important;
-}
-
-.btn1 {
-    padding: 10px;
-    width: 90px;
-}
-
-.video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
 
 /* STAY */
 
 .div2 {
     margin: 0;
     width: 100%;
-    padding: 100px;
+    padding: 120px 150px;
     height: 100vh;
+    overflow: hidden;
 }
 
 .div2 img {
@@ -212,6 +132,7 @@ body {
 .row-stay-titulo {
     width: 100%;
     text-align: center;
+    margin: 0;
 }
 
 .col-stay-titulo {}
@@ -233,10 +154,14 @@ body {
 
 .col-stay {}
 
+.col-stay-titulo {
+    padding: 0px;
+}
+
 .col-stay-e {
-    position: relative;
+    /* position: relative;
     top: 30px;
-    left: 150px;
+    left: 150px; */
 }
 
 .col-stay-e p {
@@ -244,8 +169,8 @@ body {
 }
 
 .col-stay-m {
-    position: relative;
-    top: 10px;
+    /* position: relative;
+    top: 10px; */
 }
 
 .col-stay-m p {
@@ -253,8 +178,9 @@ body {
 }
 
 .col-stay-f {
-    position: relative;
-    top: 80px;
+    /* position: relative;
+    top: 80px; */
+    padding: 10px;
 }
 
 .col-stay-f p {
@@ -262,8 +188,8 @@ body {
 }
 
 .col-stay-h {
-    position: relative;
-    top: -20px;
+    /* position: relative;
+    top: -20px; */
 }
 
 .col-stay-h p {
@@ -277,104 +203,60 @@ body {
     margin: 0;
     width: 100%;
     padding: 120px 100px 100px 100px;
-    height: 100vh;
+    height: 100%;
 }
 
-#servicio img {
-    width: 70px;
+.serv-container {
+    padding: 30px 0;
     margin: auto;
+    width: 100%;
 }
 
-.row-serv-cama {
-    padding: 50px;
+.row-serv-titulo {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.row-serv {
+    max-width: 950px;
     margin: auto;
+    padding: 40px;
 }
 
-.row-serv-cama p {
-    font-size: 16px;
+.row-serv img {
+    width: 400px;
+    padding: 0 20px;
 }
 
-.col-serv-cama-p {
-    max-width: 800px;
-    margin: auto;
+.col-serv {
+    width: 100%;
 }
 
-.col-serv-cama-img {
-    margin: auto;
+.row-serv-deta {
+    width: 100%;
+    margin: 0;
 }
 
-.row-serv-rest {
-    padding: 50px;
-    margin: auto;
+.col-serv-deta {
+    text-align: center;
 }
 
-.row-serv-rest p {
-    font-size: 16px;
-}
-
-.col-serv-rest-p {
-    max-width: 800px;
-    margin: auto;
-}
-
-.col-serv-rest-img {
-    margin: auto;
-}
-
-.row-serv-cafe {
-    padding: 50px;
-    margin: auto;
-}
-
-.row-serv-cafe p {
-    font-size: 16px;
-}
-
-.col-serv-cafe-p {
-    max-width: 800px;
-    margin: auto;
-}
-
-.col-serv-cafe-img {
-    margin: auto;
-}
-
-.row-serv-shop {
-    padding: 50px;
-    margin: auto;
-}
-
-.row-serv-shop p {
-    font-size: 16px;
-}
-
-.col-serv-shop-p {
-    max-width: 800px;
-    margin: auto;
-}
-
-.col-serv-shop-img {
-    margin: auto;
+.row-serv-deta button {
+    background-color: #4A8079 !important;
+    width: 100px;
+    color: #faecd3;
 }
 
 
-/* COMER */
+/* NOSOTROS */
 
-.div4 {
+.div3 {
     margin: 0;
     width: 100%;
     padding: 100px;
-    height: 100vh;
-}
-
-
-/* SHOP */
-
-.div5 {
-    margin: 0;
-    width: 100%;
-    padding: 50px;
-    height: 100vh;
+    height: auto;
 }
 
 
@@ -387,7 +269,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: white;
+    background-color: #faecd3;
 }
 
 .navbar-nav {}
@@ -411,6 +293,19 @@ body {
 
 .navbar a {
     color: black;
+}
+
+
+/* FAVICON */
+
+.favicon {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.favicon img {
+    width: 30px;
 }
 
 
@@ -444,12 +339,12 @@ footer {
 }
 
 .foot-col {
-    color: white;
+    color: #faecd3;
 }
 
 .foot-col i {
     font-size: 24px;
-    color: white;
+    color: #faecd3;
 }
 
 .foot-col img {
@@ -472,7 +367,7 @@ footer {
 }
 
 .info p {
-    color: white;
+    color: #faecd3;
     margin: 0;
 }
 
@@ -485,143 +380,18 @@ footer {
 }
 
 .foot-col a {
-    color: white;
+    color: #faecd3;
     text-decoration: none;
 }
 
 .foot-col a:hover {
-    color: white;
+    color: #faecd3;
     text-decoration: none;
-}
-
-
-/* CHAT */
-
-.div6 {
-    /* height: 100vh; */
-}
-
-.div6 h2 {
-    font-size: 46px;
-    font-weight: 400;
-    margin: 0px;
-    color: white;
-}
-
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: 900;
-    text-align: center;
-}
-
-.col-p {
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-    font-size: 14px;
-    padding: 30px;
-    color: white;
-}
-
-.col-p p {
-    padding: 20px;
-}
-
-#output {
-    text-align: center;
-}
-
-#container {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
-
-input {
-    font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
-    color: #000;
-    padding: 5px 25px;
-    display: inline-block;
-    font-size: 20px;
-    border: solid 3px black;
-    border-radius: 15px;
 }
 
 hr {
     max-width: 550px;
     border: .4px solid #4A8079;
-}
-
-.row-chat {
-    margin: auto;
-    max-width: 1200px;
-    padding: 10px;
-    height: 329px;
-}
-
-.col-chat {
-    padding: 42px;
-}
-
-.col-chat h1 {
-    font-size: 40px;
-}
-
-.col-p span {
-    text-decoration: none;
-    background-color: #9ddee1;
-}
-
-.bot {
-    width: 300px;
-    float: right;
-}
-
-
-/* CONTACTO IMG */
-
-.contacto {
-    height: auto;
-    width: 100%;
-}
-
-.boton {
-    width: 70px;
-}
-
-.boton:hover {
-    background: #3a7999;
-    color: white;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-.row-contact {
-    width: 100%;
-    height: 329px;
-    margin: 0;
-    text-align: center;
-}
-
-.col-contact {
-    padding: 55px;
-    color: white;
-}
-
-.col-contact img {
-    width: 100px;
-    color: white;
-}
-
-.col-contact h5 {
-    font-size: 1.225em;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 20px;
-}
-
-.col-contact p {
-    font-weight: 300;
 }
 
 
