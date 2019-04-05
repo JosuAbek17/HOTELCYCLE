@@ -1,6 +1,7 @@
 $(document).ready(function() {
     setHeader();
     setFooter();
+    setLogo();
     // $(".div2").hide();
     // $(".div3").hide();
     // $(".contacto").hide();
@@ -12,10 +13,12 @@ $(document).ready(function() {
     setMap();
 })
 $(window).scroll(function() {
-    if ($(".header").offset().top > 100) {
+    if ($(".header").offset().top > 800) {
         $(".header").css("background-color", "#4A8079");
+
     } else {
-        $(".header").css("background-color", "white");
+        $(".header").css("background-color", "#faecd3");
+
     }
 });
 
@@ -72,12 +75,26 @@ function contacto() {
 
 }
 
+function setLogo() {
+    var codeLogo = '';
+    codeLogo += ' <div class="favicon">';
+    codeLogo += '   <a href="index.html"><img src="../img/favicon.png" alt="Home"></a>';
+    codeLogo += ' </div>';
+
+    try {
+        document.getElementsByTagName('favicon')[0].innerHTML = codeLogo;
+    } catch (error) {
+        msg = "Fallo, no se ha encontrado favicon." + error;
+        log(msg);
+    }
+}
+
 function setHeader() {
 
     var codeHeader = '';
     codeHeader += '    <div class="row logo-row">';
     codeHeader += '    <div class="col-md-12 col-sm-12 logo-col">';
-    codeHeader += '    <a class="center-block titulo" href="index.html#inicio"><img class="center-block" src="../img/logo-nombre.png" alt="#"></a>';
+    codeHeader += '    <a class="center-block titulo" href="index.html#"><img class="center-block" src="../img/logo-nombre.png" alt="#"></a>';
     codeHeader += '    </div>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="row nav-row">';
