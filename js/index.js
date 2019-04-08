@@ -2,23 +2,30 @@ $(document).ready(function() {
     setHeader();
     setFooter();
     setLogo();
-    // $(".div2").hide();
-    // $(".div3").hide();
-    // $(".contacto").hide();
-    // $(".footer").hide();
     $(".col-inicio").hide();
     $(".col-registro").hide();
-
-
     setMap();
+
 })
-$(window).scroll(function() {
-    if ($(".header").offset().top > 800) {
+$('.col-serv').hover(function() {
+    $('.centrado').addClass('toggled');
+});
+
+$(document).on("scroll", function() {
+    if ($(document).scrollTop() > 600) {
+        $("header").removeClass("large").addClass("small");
+        $(".logo-row").hide();
         $(".header").css("background-color", "#4A8079");
-
+        $(".header a").css("color", "#faecd3");
+        $(".header span").css("color", "#faecd3");
+        $(".fav").show();
     } else {
+        $("header").removeClass("small").addClass("large");
+        $(".logo-row").show();
         $(".header").css("background-color", "#faecd3");
-
+        $(".header a").css("color", "black");
+        $(".header span").css("color", "black");
+        $(".fav").hide();
     }
 });
 
@@ -78,7 +85,7 @@ function contacto() {
 function setLogo() {
     var codeLogo = '';
     codeLogo += ' <div class="favicon">';
-    codeLogo += '   <a href="index.html"><img src="../img/favicon.png" alt="Home"></a>';
+    codeLogo += '   <a href="index.html#"><img src="../img/favicon.png" alt="Home"></a>';
     codeLogo += ' </div>';
 
     try {
@@ -103,6 +110,7 @@ function setHeader() {
     codeHeader += '                 <a class="nav-a" onclick="servicio()" href="index.html#servicio">Servicios</a>';
     codeHeader += '                 <a class="nav-a" onclick="about()" href="index.html#nosotros">Nosotros</a>';
     codeHeader += '                 <a class="nav-a" onclick="contacto()" href="index.html#contacto">Contacto</a>';
+    codeHeader += '                 <a class="nav-a" onclick="contacto()" href="index.html#"><img class="fav" src="../img/fav2.png" alt="logo"></a>';
     codeHeader += '    </div>';
     // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
     // codeHeader += '                 ';
