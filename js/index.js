@@ -2,15 +2,54 @@ $(document).ready(function() {
     setHeader();
     setFooter();
     setLogo();
+    $(".serv-2").hide();
+    $(".serv-3").hide();
+    $(".serv-4").hide();
+    $(".serv-5").hide();
     $(".col-inicio").hide();
     $(".col-registro").hide();
     setMap();
-
-})
-$('.col-serv').hover(function() {
-    $('.centrado').addClass('toggled');
 });
 
+function setHab() {
+    $(".serv-1").show();
+    $(".serv-2").hide();
+    $(".serv-3").hide();
+    $(".serv-4").hide();
+    $(".serv-5").hide();
+}
+
+function setRest() {
+    $(".serv-1").hide();
+    $(".serv-2").show();
+    $(".serv-3").hide();
+    $(".serv-4").hide();
+    $(".serv-5").hide();
+}
+
+function setBar() {
+    $(".serv-1").hide();
+    $(".serv-2").hide();
+    $(".serv-3").show();
+    $(".serv-4").hide();
+    $(".serv-5").hide();
+}
+
+function setShop() {
+    $(".serv-1").hide();
+    $(".serv-2").hide();
+    $(".serv-3").hide();
+    $(".serv-4").show();
+    $(".serv-5").hide();
+}
+
+function setAct() {
+    $(".serv-1").hide();
+    $(".serv-2").hide();
+    $(".serv-3").hide();
+    $(".serv-4").hide();
+    $(".serv-5").show();
+}
 $(document).on("scroll", function() {
     if ($(document).scrollTop() > 600) {
         $("header").removeClass("large").addClass("small");

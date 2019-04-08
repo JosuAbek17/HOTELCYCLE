@@ -219,12 +219,38 @@ body {
 }
 
 .row-serv {
-    padding: 30px 0px;
+    max-width: 700px;
+    margin: auto;
+    border: solid 4px #4A8079;
 }
 
 .centrado a {
     color: black;
     text-align: center;
+}
+
+.row-serv-opciones {
+    text-align: center;
+}
+
+.row-serv-opciones span {
+    width: 30px;
+    height: 30px;
+    color: #4A8079;
+}
+
+.col-serv-opciones {
+    padding: 40px;
+}
+
+.col-serv-opciones a {
+    font-size: 25px;
+    color: #4A8079;
+    padding: 10px;
+}
+
+.col-serv-opciones a:hover {
+    border-bottom: solid 1px #4A8079;
 }
 
 .centrado {
@@ -266,20 +292,29 @@ body {
 
 .row-serv img {
     width: 100%;
-    -webkit-filter: sepia(0);
-    filter: sepia(0);
+    /* -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; */
 }
 
 .row-serv img:hover {
-    -webkit-filter: sepia(100%);
-    filter: sepia(100%);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    /* -webkit-filter: sepia(0);
+    filter: sepia(0); */
 }
 
-.col-serv {
-    width: 100%;
+.col-serv {}
+
+.col-serv-texto {
+    background-color: #faecd3;
+}
+
+.col-serv-img {
     padding: 0;
+}
+
+.col-serv-img p {
+    padding: 20px;
 }
 
 
@@ -447,8 +482,6 @@ footer {
     color: #faecd3;
     margin: 0;
 }
-
-.foot-col {}
 
 .foot-col p {
     font-size: 12px;
