@@ -8,7 +8,7 @@ $(document).ready(function() {
     $(".serv-5").hide();
     $(".col-inicio").hide();
     $(".col-registro").hide();
-    setMap();
+    $(".fav2").hide();
 });
 
 function setHab() {
@@ -51,46 +51,26 @@ function setAct() {
     $(".serv-5").show();
 }
 $(document).on("scroll", function() {
-    if ($(document).scrollTop() > 600) {
-        $("header").removeClass("large").addClass("small");
-        $(".logo-row").hide();
-        $(".header").css("background-color", "#4A8079");
+    if ($(document).scrollTop() > 200) {
+        $("header").addClass("small");
+        $(".header").css("background-color", "black");
         $(".header a").css("color", "#faecd3");
         $(".header span").css("color", "#faecd3");
-        $(".fav").show();
-    } else {
-        $("header").removeClass("small").addClass("large");
-        $(".logo-row").show();
-        $(".header").css("background-color", "#faecd3");
-        $(".header a").css("color", "black");
-        $(".header span").css("color", "black");
+        $(".fav2").show();
         $(".fav").hide();
+    } else {
+        $("header").removeClass("small");
+        $(".header").css("background-color", "transparent");
+        $(".header a").css("color", "white");
+        $(".header span").css("color", "white");
+        $(".fav2").hide();
+        $(".fav").show();
     }
 });
 
-function registro() {
-    $(".div1").css("background-color", " rgba(0,0,0,0.7)");
-    $(".col-inicio").hide();
-    $(".col-registro").show();
-    $(".login").hide();
-    $(".registro").hide();
-
-}
-
-function login() {
-    $(".div1").css("background-color", " rgba(0,0,0,0.7)");
-    $(".col-inicio").show();
-    $(".login").hide();
-    $(".registro").hide();
-    $(".col-registro").hide();
-}
-
 function about() {
     $(".div2").show();
-    // $(".div1").hide();
 
-    // $(".contacto").hide();
-    // $(".footer").hide();
 }
 
 function stay() {
@@ -105,17 +85,8 @@ function shop() {
     $(".div4").show();
 }
 
-function volver() {
-    $(".div1").css("background-color", "#3a7999");
-    $(".col-inicio").hide();
-    $(".col-registro").hide();
-    $(".login").show();
-    $(".registro").show();
-}
 
 function contacto() {
-    // $(".div1").hide();
-    // $(".div2").hide();
     $(".contacto").show();
     $(".footer").show();
 
@@ -138,37 +109,26 @@ function setLogo() {
 function setHeader() {
 
     var codeHeader = '';
-    codeHeader += '    <div class="row logo-row">';
-    codeHeader += '    <div class="col-md-12 col-sm-12 logo-col">';
-    codeHeader += '    <a class="center-block titulo" href="index.html#"><img class="center-block" src="../img/logo-nombre.png" alt="#"></a>';
-    codeHeader += '    </div>';
-    codeHeader += '    </div>';
     codeHeader += '    <div class="row nav-row">';
-    codeHeader += '    <div class="col-md-6 col-sm-6 nav-col">';
+    codeHeader += ' <nav class="navbar">';
+    codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-img">';
+    codeHeader += '<a class="nav-a fav" href="#">';
+    codeHeader += ' <img class="fav" src="../img/logo.png" alt="Home">';
+    codeHeader += '</a>';
+    codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/fav2.png" alt="logo"></a>';
+    codeHeader += '    </div>';
+    codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-menu">';
     codeHeader += '                 <a class="nav-a" onclick="stay()" href="index.html#stay">Stay</a>';
     codeHeader += '                 <a class="nav-a" onclick="servicio()" href="index.html#servicio">Servicios</a>';
     codeHeader += '                 <a class="nav-a" onclick="about()" href="index.html#nosotros">Nosotros</a>';
     codeHeader += '                 <a class="nav-a" onclick="contacto()" href="index.html#contacto">Contacto</a>';
-    codeHeader += '                 <a class="nav-a" onclick="contacto()" href="index.html#"><img class="fav" src="../img/fav2.png" alt="logo"></a>';
     codeHeader += '    </div>';
-    // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
-    // codeHeader += '                 ';
-    // codeHeader += '    </div>';
-    // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
-    // codeHeader += '                 ';
-    // codeHeader += '    </div>';
-    // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
-    // codeHeader += '                 ';
-    // codeHeader += '    </div>';
-    // codeHeader += '    <div class="col-md-2 col-sm-2 nav-col">';
-    // codeHeader += '                 ';
-    // codeHeader += '    </div>';
-    codeHeader += '    <div class="col-md-6 col-sm-6 nav-col">';
-    codeHeader += '         <span>+34 941 672 208</span>';
+    codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-otro">';
     codeHeader += '         <a class="nav-a reserva" href="#">RESERVA</a>';
     codeHeader += '         <a class="nav-a" href="#">ES</a>';
     codeHeader += '         <a class="nav-a" href="#">EN</a>';
     codeHeader += '    </div>';
+    codeHeader += '</nav>';
     codeHeader += '    </div>';
 
 

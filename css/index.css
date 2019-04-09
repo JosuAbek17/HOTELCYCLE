@@ -9,18 +9,54 @@ body {
 .div1 {
     padding: 0;
     height: 100vh;
-    /* background-image: url("../img/bike.jpg");
+    background-image: url("../img/wooden-house-background.jpg");
+    background-color: rgba(0, 0, 0, 0.8);
+    filter: brightness(0.8);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top; */
+    background-position: top;
+}
+
+.col-home h1 {
+    margin: 0;
+    font-size: 150px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    border-top: solid 4px white;
+    filter: brightness(1);
+}
+
+.col-home h2 {
+    font-size: 50px;
+    margin: 0;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    border-bottom: solid 4px white;
+}
+
+.row-home {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.row-home img {
+    width: 500px;
+}
+
+.row-home h1 {
+    margin: 0;
 }
 
 .row-title {
     text-align: center;
     padding: 30px;
 }
-
-.col-title {}
 
 .carousel-item img {
     width: 300px;
@@ -33,10 +69,6 @@ body {
     height: 500px;
     margin: auto;
 }
-
-.row-home {}
-
-.col-home {}
 
 .d-block {
     width: 500px;
@@ -62,23 +94,57 @@ body {
     margin-left: 5px;
 }
 
-.logo-row {
-    padding: 10px;
-    width: 100%;
-    height: auto;
-    margin: 0;
-}
-
 .nav-row {
     width: 100%;
     margin: 0;
     display: table;
+}
+
+.nav-row a {
+    color: white;
+    text-decoration: none;
     padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nav-col-img {
+    text-align: left;
+}
+
+.nav-col-otro {
+    text-align: right;
+    color: white;
+}
+
+.nav-col-otro a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nav-col-menu {
+    text-align: center;
+}
+
+.nav-col-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .nav-col {
     padding: 0;
-    text-align: center;
 }
 
 .nav-col span {
@@ -86,7 +152,7 @@ body {
 }
 
 .nav-col a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px;
     text-transform: uppercase;
@@ -96,7 +162,7 @@ body {
 }
 
 .reserva {
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -129,13 +195,15 @@ body {
     color: #4A8079;
 }
 
-.row-stay-titulo {
+.row-stay-cita {
     width: 100%;
     text-align: center;
     margin: 0;
 }
 
-.col-stay-titulo {}
+.col-stay-cita {
+    font-family: 'Permanent Marker', cursive;
+}
 
 .row-stay {
     width: 100%;
@@ -311,9 +379,11 @@ body {
 
 .col-serv-img {
     padding: 0;
+    background-color: #ceb68e;
 }
 
 .col-serv-img p {
+    margin: 0;
     padding: 20px;
 }
 
@@ -344,8 +414,34 @@ body {
 .div4 {
     margin: 0;
     width: 100%;
-    padding: 100px;
+    padding: 0;
     height: auto;
+}
+
+.row-us {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.col-us {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.col-us h2 {
+    position: absolute;
+    padding: 100px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+}
+
+.col-us img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 800px;
 }
 
 
@@ -358,7 +454,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: #faecd3;
+    background-color: transparent;
     transition: all 1s;
     -moz-transition: all 1s;
     /* Firefox 4 */
@@ -366,6 +462,10 @@ body {
     /* Safari and Chrome */
     -o-transition: all 1s;
     /* Opera */
+}
+
+.navbar img {
+    width: 30px;
 }
 
 header img {
@@ -380,14 +480,11 @@ header img {
 
 header.small {
     height: auto;
-    padding: 10px;
+    padding: 5px;
 }
 
 .fav {
     width: 30px;
-    position: absolute;
-    right: 0;
-    top: -5px
 }
 
 .navbar-brand {
@@ -404,7 +501,7 @@ header.small {
 }
 
 .navbar a {
-    color: black;
+    color: white;
 }
 
 
@@ -412,6 +509,7 @@ header.small {
 
 .favicon {
     position: fixed;
+    z-index: 999;
     bottom: 40px;
     right: 40px;
 }
@@ -429,7 +527,7 @@ footer {
     clear: both;
     border-style: solid;
     border-width: 1px 0 0 0;
-    background-color: #4A8079;
+    background-color: black;
     padding: 30px;
     align-content: center;
     text-align: center;
