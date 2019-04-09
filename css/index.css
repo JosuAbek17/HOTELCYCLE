@@ -161,11 +161,6 @@ body {
     letter-spacing: 2px;
 }
 
-.reserva {
-    color: white;
-    font-weight: bold;
-}
-
 .logo-row img {
     width: 200px;
     display: block;
@@ -181,15 +176,39 @@ body {
 
 .div2 {
     margin: 0;
+    padding: 0;
     width: 100%;
-    padding: 100px 150px;
     height: auto;
     overflow: hidden;
 }
 
-.div2 img {
-    width: 70%;
+.row-stay-form {
+    /* background-image: url("../img/terraza.jpg"); */
+    width: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
 }
+
+.col-stay-form {
+    padding: 0;
+    width: 100%;
+}
+
+.reserva {
+    max-width: 300px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.row-stay-form img {}
+
+.div2 img {}
 
 .div2 a {
     color: #4A8079;
@@ -199,6 +218,7 @@ body {
     width: 100%;
     text-align: center;
     margin: 0;
+    padding: 100px;
 }
 
 .col-stay-cita {

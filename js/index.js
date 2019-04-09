@@ -124,7 +124,6 @@ function setHeader() {
     codeHeader += '                 <a class="nav-a" onclick="contacto()" href="index.html#contacto">Contacto</a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-otro">';
-    codeHeader += '         <a class="nav-a reserva" href="#">RESERVA</a>';
     codeHeader += '         <a class="nav-a" href="#">ES</a>';
     codeHeader += '         <a class="nav-a" href="#">EN</a>';
     codeHeader += '    </div>';
