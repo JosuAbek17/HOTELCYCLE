@@ -203,6 +203,14 @@ body {
     margin: 0;
 }
 
+.row-stay-form h3 {
+    text-align: center;
+    color: #faecd3;
+    margin: 0;
+    padding-bottom: 70px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
 .row-stay-form form {
     display: inline-block;
     text-align: center;
@@ -211,7 +219,7 @@ body {
 
 .col-stay-form {
     width: 100%;
-    padding: 60px;
+    padding: 100px;
     background-color: #10253d;
 }
 
@@ -563,7 +571,7 @@ footer {
     clear: both;
     border-style: solid;
     border-width: 1px 0 0 0;
-    background-color: black;
+    background-color: #10253d;
     padding: 30px;
     align-content: center;
     text-align: center;

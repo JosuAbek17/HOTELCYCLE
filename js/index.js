@@ -2,6 +2,7 @@ $(document).ready(function() {
     setHeader();
     setFooter();
     setLogo();
+    setReserva();
     $(".serv-2").hide();
     $(".serv-3").hide();
     $(".serv-4").hide();
@@ -53,7 +54,7 @@ function setAct() {
 $(document).on("scroll", function() {
     if ($(document).scrollTop() > 200) {
         $("header").addClass("small");
-        $(".header").css("background-color", "black");
+        $(".header").css("background-color", "#10253d");
         $(".header a").css("color", "#faecd3");
         $(".header span").css("color", "#faecd3");
         $(".fav2").show();
@@ -89,6 +90,79 @@ function shop() {
 function contacto() {
     $(".contacto").show();
     $(".footer").show();
+
+}
+
+
+function setReserva() {
+    var codeReserva = '';
+    codeReserva += '<div class="row row-stay-form">';
+    codeReserva += '      <div class="col-md-12 col-sm-12 col-lg-12 col-stay-form">';
+    codeReserva += '<h3>¿ A qué esperas ?</h3>';
+    codeReserva += '<form class="form-inline" action="#" method="post">';
+    codeReserva += '<div class="form-group mx-sm-3">';
+    codeReserva += '<label for="inputCheckIn" class="sr-only">Check-In</label>';
+    codeReserva += '<input type="date" class="form-control" id="checkin" placeholder="Check-In">';
+    codeReserva += '</div>';
+    codeReserva += '<div class="form-group mx-sm-3">';
+    codeReserva += '<label for="inputCheckOut" class="sr-only">Check-Out</label>';
+    codeReserva += '<input type="date" class="form-control" id="checkout" placeholder="Check-Out">';
+    codeReserva += '</div>';
+    codeReserva += '<div class="form-group mx-sm-3">';
+    codeReserva += '<select class="form-control">';
+    codeReserva += '                          <option selected>Adultos</option>';
+    codeReserva += '                               <option value="1">1</option>';
+    codeReserva += '                        <option value="2">2</option>';
+    codeReserva += '                        <option value="3">4</option>';
+    codeReserva += '                        <option value="1">5</option>';
+    codeReserva += '                        <option value="2">6</option>';
+    codeReserva += '                        <option value="3">7</option>';
+    codeReserva += '                        <option value="1">8</option>';
+    codeReserva += '                        <option value="2">9</option>';
+    codeReserva += '                        <option value="3">10</option>';
+    codeReserva += '                    </select>';
+    codeReserva += '</div>';
+    codeReserva += '<div class="form-group mx-sm-3">';
+    codeReserva += '    <select class="form-control">';
+    codeReserva += '                        <option selected>Niños</option>';
+    codeReserva += '                        <option value="1">1</option>';
+    codeReserva += '                        <option value="2">2</option>';
+    codeReserva += '                        <option value="3">4</option>';
+    codeReserva += '                        <option value="1">5</option>';
+    codeReserva += '                        <option value="2">6</option>';
+    codeReserva += '                        <option value="3">7</option>';
+    codeReserva += '                        <option value="1">8</option>';
+    codeReserva += '                        <option value="2">9</option>';
+    codeReserva += '                        <option value="3">10</option>';
+    codeReserva += '                    </select>';
+    codeReserva += '</div>';
+    codeReserva += '<div class="form-group mx-sm-3">';
+    codeReserva += '    <select class="form-control">';
+    codeReserva += '                        <option selected>Habitaciones</option>';
+    codeReserva += '                        <option value="1">1</option>';
+    codeReserva += '                        <option value="2">2</option>';
+    codeReserva += '                        <option value="3">4</option>';
+    codeReserva += '                        <option value="1">5</option>';
+    codeReserva += '                        <option value="2">6</option>';
+    codeReserva += '                        <option value="3">7</option>';
+    codeReserva += '                        <option value="1">8</option>';
+    codeReserva += '                        <option value="2">9</option>';
+    codeReserva += '                        <option value="3">10</option>';
+    codeReserva += '            </select>';
+    codeReserva += '</div>';
+
+    codeReserva += '<button type="submit" class="btn btn-default">Submit</button>';
+
+    codeReserva += '</form>';
+    codeReserva += '</div>';
+    codeReserva += '</div>';
+
+    try {
+        document.getElementsByTagName('reserva')[0].innerHTML = codeReserva;
+    } catch (error) {
+        msg = "Fallo, no se ha encontrado reserva." + error;
+        log(msg);
+    }
 
 }
 
