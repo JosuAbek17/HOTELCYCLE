@@ -182,20 +182,6 @@ body {
     overflow: hidden;
 }
 
-.row-stay-form {
-    /* background-image: url("../img/terraza.jpg"); */
-    width: 100%;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-}
-
-.col-stay-form {
-    padding: 0;
-    width: 100%;
-}
-
 .reserva {
     max-width: 300px;
     margin: auto;
@@ -206,19 +192,49 @@ body {
     -webkit-transform: translate(-50%, -50%);
 }
 
-.row-stay-form img {}
-
-.div2 img {}
-
 .div2 a {
     color: #4A8079;
+}
+
+.row-stay-form {
+    width: 100%;
+    position: relative;
+    top: 0;
+    margin: 0;
+}
+
+.row-stay-form form {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.col-stay-form {
+    width: 100%;
+    padding: 60px;
+    background-color: #10253d;
+}
+
+.col-stay-form select {
+    width: 100px;
+    height: 35px !important;
+}
+
+.col-stay-form input {
+    width: 100px;
+    height: 35px;
+}
+
+.col-stay-form button {
+    width: 100px;
+    height: 35px;
 }
 
 .row-stay-cita {
     width: 100%;
     text-align: center;
     margin: 0;
-    padding: 100px;
+    padding: 100px 100px 50px;
 }
 
 .col-stay-cita {

@@ -95,7 +95,7 @@ function contacto() {
 function setLogo() {
     var codeLogo = '';
     codeLogo += ' <div class="favicon">';
-    codeLogo += '   <a href="index.html#"><img src="../img/favicon.png" alt="Home"></a>';
+    codeLogo += '   <a href="index.html#"><img src="../img/fav2.png" alt="Home"></a>';
     codeLogo += ' </div>';
 
     try {
