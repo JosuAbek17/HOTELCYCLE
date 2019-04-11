@@ -62,13 +62,6 @@ body {
     height: 420px;
 }
 
-.mySlides {
-    display: none;
-    width: 500px;
-    height: 500px;
-    margin: auto;
-}
-
 .d-block {
     width: 500px;
 }
@@ -342,7 +335,7 @@ body {
 
 .row-stay-food {
     width: 100%;
-    margin: 60px 0;
+    margin: 60px 0 0;
     padding: 0;
     height: 550px;
     background-color: rgba(0, 0, 0, 0.25);
@@ -391,41 +384,33 @@ body {
     height: 550px;
 }
 
-.w3-badge2 {
-    cursor: pointer;
-}
-
-.w3-badge2 {
-    height: 13px;
-    width: 13px;
+.col-stay-food-desc {
+    margin: 0;
     padding: 0;
 }
 
-.col-stay-form select {
-    font-weight: bold;
-    width: 170px !important;
-    height: 45px !important;
-    background: rgba(250, 250, 250, .03);
-    color: #faecd3;
-    padding: 0px 0px 0px 21px;
-    border-radius: 0;
-    border: 0;
-    border-right: 1px solid rgba(224, 224, 224, .05) !important;
+.row-stay-food-desc {
+    padding: 60px;
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'Heebo', sans-serif;
 }
 
-.col-stay-form input {
-    font-weight: bold;
-    width: 150px !important;
-    height: 45px;
-    background: rgba(250, 250, 250, .03);
-    color: #faecd3;
-    border: 0;
-    border-right: 1px solid rgba(224, 224, 224, .05) !important;
-    padding: 0px 0px 0px 21px;
-    border-radius: 0;
+.row-stay-food-desc p {
+    padding: 20px;
 }
 
-.col-stay-form button {
+.row-stay-food-desc button {
+    border-radius: 0;
+    width: 200px;
+    height: 44px;
+}
+
+.col-stay-food-mas {
+    text-align: center;
+}
+
+.col-stay-food-mas button {
     font-weight: bold;
     color: #ff0458;
     border-color: #ff0458;
@@ -437,11 +422,112 @@ body {
     border-radius: 0;
 }
 
-.col-stay-form button:hover {
+.col-stay-food-mas button:hover {
     background-color: #ff0458;
     color: white;
     border-color: #ff0458;
 }
+
+
+/* SHOP */
+
+.row-stay-shop {
+    width: 100%;
+    margin: 60px 0 0;
+    padding: 0;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.25);
+    filter: brightness(0.8);
+}
+
+.col-stay-shop {
+    padding: 0;
+    width: 100%;
+}
+
+.col-stay-shop h3 {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+}
+
+.shop1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/shop1.jpg");
+}
+
+.shop2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/shop2.jpg");
+}
+
+.shop3 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/shop3.jpg");
+}
+
+.mySlides3 {
+    display: none;
+    width: 100%;
+    height: 550px;
+}
+
+.col-stay-shop-desc {
+    margin: 0;
+    padding: 0;
+}
+
+.row-stay-shop-desc {
+    padding: 60px;
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'Heebo', sans-serif;
+}
+
+.row-stay-shop-desc p {
+    padding: 20px;
+}
+
+.row-stay-shop-desc button {
+    border-radius: 0;
+    width: 200px;
+    height: 44px;
+}
+
+.col-stay-shop-mas {
+    text-align: center;
+}
+
+.col-stay-shop-mas button {
+    font-weight: bold;
+    color: #ff0458;
+    border-color: #ff0458;
+    width: auto;
+    height: 45px;
+    background: rgba(250, 250, 250, .03);
+    padding: 0 15px;
+    margin-left: 6px;
+    border-radius: 0;
+}
+
+.col-stay-shop-mas button:hover {
+    background-color: #ff0458;
+    color: white;
+    border-color: #ff0458;
+}
+
+
+/*  */
 
 .row-stay-cita {
     width: 100%;

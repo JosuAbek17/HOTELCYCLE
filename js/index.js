@@ -279,6 +279,8 @@ function setMap() {
         title: "HOTEL CYCLE"
     })
 }
+
+// ROOM //
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -306,30 +308,58 @@ function showDivs(n) {
     dots[slideIndex - 1].className += " w3-white";
 }
 
-
+// FOOD & DRINK //
 var slideIndex2 = 1;
 showDivs2(slideIndex2);
 
-function plusDivs2(n) {
-    showDivs2(slideIndex2 += n);
+function plusDivs2(m) {
+    showDivs2(slideIndex2 += m);
 }
 
-function currentDiv2(n) {
-    showDivs2(slideIndex2 = n);
+function currentDiv2(m) {
+    showDivs2(slideIndex2 = m);
 }
 
-function showDivs2(n) {
+function showDivs2(m) {
     var i;
     var x = document.getElementsByClassName("mySlides2");
-    var dots = document.getElementsByClassName("demo2");
-    if (n > x.length) { slideIndex2 = 1 }
-    if (n < 1) { slideIndex2 = x.length }
+    var dots = document.getElementsByClassName("demo");
+    if (m > x.length) { slideIndex2 = 1 }
+    if (m < 1) { slideIndex2 = x.length }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white2", "");
+        dots[i].className = dots[i].className.replace(" w3-white", "");
     }
     x[slideIndex2 - 1].style.display = "block";
-    dots[slideIndex2 - 1].className += " w3-white2";
+    dots[slideIndex2 - 1].className += " w3-white";
+}
+
+// SHOP //
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(m) {
+    showDivs3(slideIndex3 += m);
+}
+
+function currentDiv3(m) {
+    showDivs3(slideIndex3 = m);
+}
+
+function showDivs3(m) {
+    var i;
+    var x = document.getElementsByClassName("mySlides3");
+    var dots = document.getElementsByClassName("demo");
+    if (m > x.length) { slideIndex3 = 1 }
+    if (m < 1) { slideIndex3 = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex3 - 1].style.display = "block";
+    dots[slideIndex3 - 1].className += " w3-white";
 }
