@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/favicon.png" style="width:32px;">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Gloria+Hallelujah|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Gloria+Hallelujah|Permanent+Marker|Lato|Heebo" rel="stylesheet">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -31,52 +32,75 @@
 
             </div>
         </div>
-
+        <reserva></reserva>
     </div>
     <div id="stay" class="container-fluid div2 animated fadeIn fast">
-        <reserva></reserva>
+
 
         <div class="row row-stay-cita">
             <div class="col-md-12 col-sm-12 col-lg-12 col-stay-cita">
                 <h2>" Seguramente la bicicleta será siempre el vehículo de los novelistas y los poetas ". Christopher Morley.</h2>
             </div>
         </div>
-        <div class="row row-stay-azul">
-            <div class="col-md-12 col-sm-12 col-lg-12 col-stay-azul">
-                <img class="center-block" src="img/azul.jpg" alt="azul">
-
+        <div class="row row-stay-hr">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-stay-hr">
+                <!-- <img class="center-block" src="img/azul.jpg" alt="azul"> -->
+                <hr class="hr">
             </div>
         </div>
-
-
-        <!-- <div class="row row-stay-titulo">
-
-            <div class="col-md-12 col-sm-12 col-xl-12 col-stay-titulo">
-                <h2>¿ A donde viajas ?</h2>
+        <div class="row row-stay-desc">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-stay-desc">
+                <p>With a design reminiscent of a 1920s transatlantic cruise liner, award-winning food and drink outlets and an electric energy, Sea Containers London is the remarkable South Bank hotel. It’s a destination where glamour meets brutalism –
+                    and it's your London anchor on the River Thames.
+                </p>
             </div>
         </div>
-        <div class="row-stay-e row">
-            <div class="col-md-12 col-sm-12 col-xl-12 col-stay-e">
-                <h3><a href="españa.html">España</a></h3>
-                <p>Por España discurren tres de las rutas del proyecto EuroVelo: La EuroVelo 1 (EV1), o Ruta Costera del Atlántico, transcurre entre Cabo Norte (Noruega) y Sagres (Portugal). Su tramo español va desde Irún (Guipúzcoa) hasta ...</p>
-            </div>
-        </div>
-        <div class="row-stay-mf row">
-            <div class="col-md-6 col-sm-6 col-xl-6 col-xl-6 col-stay-m col-md-offset-3 col-sm-offset-3">
-                <img class="center-block" src="img/mundo.png" alt="mundo">
-            </div>
-            <div class="col-md-3 col-sm-3 col-xl-3 col-stay-f">
-                <h3><a href="francia.html">Francia</a></h3>
-                <p>La región francesa del Loira, en el centro del país, ofrece a los amantes del cicloturismo una ruta que suma ya 800 kilómetros de vías señalizadas para hacer en bici, aprovechando carriles especiales, caminos de tierra ...</p>
-            </div>
-        </div>
-        <div class="row-stay-h row">
-            <div class="col-md-12 col-sm-12 col-xl-12 col-stay-h">
-                <h3><a href="holanda.html">Holanda</a></h3>
-                <p>Con más bicicletas (18 millones) que habitantes (16,7 millones), más de 32.000 kilómetros de carriles bici y un paisaje formado por grandes llanuras casi sin cuestas, Holanda es perfecta para unas vacaciones sobre dos ruedas ...</p>
-            </div>
-        </div> -->
+        <div class="row row-stay-room">
+            <div class="col-md-12 col-sm-12 col-lg-12 w3-content w3-display-container col-stay-room animated fadeIn fast">
+                <h3>OUR ROOMS</h3>
+                <div class="room1 mySlides "></div>
+                <div class="room2 mySlides "></div>
+                <div class="room3 mySlides "></div>
 
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle">
+
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="row row-stay-room-desc">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-stay-room-desc">
+                <p>A space to unwind, recharge and regroup, each of our guest rooms are the ideal South Bank base from which to explore London.Whether you opt for one of our standard rooms, or book into an impressive river view apartment suite, you’re guaranteed
+                    to have a memorable evening.Award-winning designer Tom Dixon </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-stay-room-desc">
+                <p>has turned his hand to all aspects of the rooms, perfecting every detail from the artwork to the positioning of the beds. Featuring bespoke furniture, custom-designed dimmable lighting, and impressive marble bathrooms, our guest rooms
+                    are here to be your London home.</p>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12 col-stay-room-mas">
+                <button type="submit" class="btn btn-default mas">VER TODAS</button>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="row row-stay-food">
+            <div class="col-md-12 col-sm-12 col-lg-12 w3-content w3-display-container col-stay-food animated fadeIn fast">
+                <h3>FOOD & DRINK</h3>
+                <div class="food1 mySlides2"></div>
+                <div class="food2 mySlides2"></div>
+                <div class="food3 mySlides2"></div>
+
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle">
+
+                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white2" onclick="currentDiv2(1)"></span>
+                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white2" onclick="currentDiv2(2)"></span>
+                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white2" onclick="currentDiv2(3)"></span>
+
+                </div>
+            </div>
+        </div>
     </div>
     <div id="servicio" class="container-fluid div3 animated fadeIn fast">
         <!-- <div class="container-fluid serv-container"> -->

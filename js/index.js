@@ -110,21 +110,7 @@ function setReserva() {
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<select class="form-control">';
-    codeReserva += '                          <option selected>Adultos</option>';
-    codeReserva += '                               <option value="1">1</option>';
-    codeReserva += '                        <option value="2">2</option>';
-    codeReserva += '                        <option value="3">4</option>';
-    codeReserva += '                        <option value="1">5</option>';
-    codeReserva += '                        <option value="2">6</option>';
-    codeReserva += '                        <option value="3">7</option>';
-    codeReserva += '                        <option value="1">8</option>';
-    codeReserva += '                        <option value="2">9</option>';
-    codeReserva += '                        <option value="3">10</option>';
-    codeReserva += '                    </select>';
-    codeReserva += '</div>';
-    codeReserva += '<div class="form-group mx-sm-3">';
-    codeReserva += '    <select class="form-control">';
-    codeReserva += '                        <option selected>Niños</option>';
+    codeReserva += '                        <option selected value="0">Adultos</option>';
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
     codeReserva += '                        <option value="3">4</option>';
@@ -138,7 +124,21 @@ function setReserva() {
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '    <select class="form-control">';
-    codeReserva += '                        <option selected>Habitaciones</option>';
+    codeReserva += '                        <option selected value="0">Niños</option>';
+    codeReserva += '                        <option value="1">1</option>';
+    codeReserva += '                        <option value="2">2</option>';
+    codeReserva += '                        <option value="3">4</option>';
+    codeReserva += '                        <option value="1">5</option>';
+    codeReserva += '                        <option value="2">6</option>';
+    codeReserva += '                        <option value="3">7</option>';
+    codeReserva += '                        <option value="1">8</option>';
+    codeReserva += '                        <option value="2">9</option>';
+    codeReserva += '                        <option value="3">10</option>';
+    codeReserva += '                    </select>';
+    codeReserva += '</div>';
+    codeReserva += '<div class="form-group mx-sm-3">';
+    codeReserva += '    <select class="form-control">';
+    codeReserva += '                        <option selected value="0">Habitaciones</option>';
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
     codeReserva += '                        <option value="3">4</option>';
@@ -151,7 +151,7 @@ function setReserva() {
     codeReserva += '            </select>';
     codeReserva += '</div>';
 
-    codeReserva += '<button type="submit" class="btn btn-default">Submit</button>';
+    codeReserva += '<button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
 
     codeReserva += '</form>';
     codeReserva += '</div>';
@@ -279,17 +279,57 @@ function setMap() {
         title: "HOTEL CYCLE"
     })
 }
-var myIndex = 0;
-carousel();
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function carousel() {
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) { myIndex = 1 }
-    x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 4000); // Change image every 4 seconds
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-white";
+}
+
+
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+    showDivs2(slideIndex2 += n);
+}
+
+function currentDiv2(n) {
+    showDivs2(slideIndex2 = n);
+}
+
+function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    var dots = document.getElementsByClassName("demo2");
+    if (n > x.length) { slideIndex2 = 1 }
+    if (n < 1) { slideIndex2 = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white2", "");
+    }
+    x[slideIndex2 - 1].style.display = "block";
+    dots[slideIndex2 - 1].className += " w3-white2";
 }
