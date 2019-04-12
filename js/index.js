@@ -363,3 +363,31 @@ function showDivs3(m) {
     x[slideIndex3 - 1].style.display = "block";
     dots[slideIndex3 - 1].className += " w3-white";
 }
+
+// ACTIVITY //
+var slideIndex4 = 1;
+showDivs4(slideIndex4);
+
+function plusDivs4(m) {
+    showDivs4(slideIndex4 += m);
+}
+
+function currentDiv4(m) {
+    showDivs4(slideIndex4 = m);
+}
+
+function showDivs4(m) {
+    var i;
+    var x = document.getElementsByClassName("mySlides4");
+    var dots = document.getElementsByClassName("demo");
+    if (m > x.length) { slideIndex4 = 1 }
+    if (m < 1) { slideIndex4 = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex4 - 1].style.display = "block";
+    dots[slideIndex4 - 1].className += " w3-white";
+}
