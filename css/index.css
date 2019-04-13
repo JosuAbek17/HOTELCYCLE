@@ -694,160 +694,61 @@
                 margin: auto;
             }
             
-            .col-stay {}
-            
             .col-stay-titulo {
                 padding: 0px;
             }
-            
-            .col-stay-e {
-                /* position: relative;
-    top: 30px;
-    left: 150px; */
-            }
-            
-            .col-stay-e p {
-                font-size: 15px;
-            }
-            
-            .col-stay-m {
-                /* position: relative;
-    top: 10px; */
-            }
-            
-            .col-stay-m p {
-                font-size: 15px;
-            }
-            
-            .col-stay-f {
-                /* position: relative;
-    top: 80px; */
-                padding: 10px;
-            }
-            
-            .col-stay-f p {
-                font-size: 15px;
-            }
-            
-            .col-stay-h {
-                /* position: relative;
-    top: -20px; */
-            }
-            
-            .col-stay-h p {
-                font-size: 15px;
-            }
-            /* SERVICIOS */
+            /* INSTAGRAM */
             
             .div3 {
                 margin: 0;
                 width: 100%;
                 height: auto;
-                padding: 70px 5px;
+                padding: 50px 0px 10px 0;
             }
             
-            .serv-container {
-                margin: auto;
-                width: 100%;
-            }
-            
-            .row-serv-titulo {
-                width: 100%;
-                text-align: center;
-                padding: 20px;
+            .row-insta {
                 margin: 0;
+                padding: 20px;
+                text-align: center;
             }
             
-            .row-serv {
-                max-width: 700px;
-                margin: auto;
-                border: solid 4px #4A8079;
+            .col-insta p {
+                letter-spacing: 2px;
+                font-family: 'Lato', sans-serif;
             }
             
-            .centrado a {
+            .col-insta a {
                 color: black;
-                text-align: center;
+                text-decoration: none;
+                letter-spacing: 0px;
             }
             
-            .row-serv-opciones {
-                text-align: center;
+            .col-insta i {
+                padding-left: 2px;
+                padding-right: 4px;
             }
             
-            .row-serv-opciones span {
-                width: 30px;
-                height: 30px;
-                color: #4A8079;
-            }
-            
-            .col-serv-opciones {
-                padding: 40px;
-            }
-            
-            .col-serv-opciones a {
-                font-size: 25px;
-                color: #4A8079;
-                padding: 10px;
-            }
-            
-            .col-serv-opciones a:hover {
-                border-bottom: solid 1px #4A8079;
-            }
-            
-            .centrado {
-                color: #faecd3;
-                font-size: 20px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                text-align: center;
-            }
-            
-            .col-serv:hover .overlay {
-                height: 30%;
-            }
-            
-            .overlay {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background-color: #4A8079;
-                overflow: hidden;
-                width: 100%;
-                height: 0;
-                transition: .5s ease;
-            }
-            
-            .col-serv-texto {
-                background-color: #faecd3;
-            }
-            
-            .col-serv-img {
-                padding: 0;
-                background-color: #ceb68e;
-            }
-            
-            .col-serv-img p {
-                margin: 0;
-                padding: 20px;
-            }
-            
-            .row-serv-deta {
+            .row-insta-fotos {
+                height: auto;
                 width: 100%;
                 margin: 0;
+                padding: 0 10px;
             }
             
-            .col-serv-deta {
-                text-align: center;
+            .col-insta-fotos {
+                width: 100%;
+                padding: 0 10px;
             }
             
-            .row-serv-deta button {
-                background-color: #4A8079 !important;
-                width: 100px;
-                color: #faecd3;
+            .row-insta-fotos img {
+                width: 100%;
+                height: auto;
+                padding: 10px 0;
+            }
+            
+            .alone {
+                height: 100% !important;
+                margin: 0 !important;
             }
             /* NOSOTROS */
             
