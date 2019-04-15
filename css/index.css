@@ -222,7 +222,6 @@
             .col-stay-form input {
                 font-weight: bold;
                 width: 150px !important;
-                border-color: #ff0458;
                 width: auto;
                 height: 45px;
                 background: rgba(250, 250, 250, .03);
@@ -794,7 +793,7 @@
                 top: 0;
                 left: 0;
                 z-index: 1;
-                background-color: transparent;
+                background-color: #10253d;
                 transition: all 1s;
                 -moz-transition: all 1s;
                 /* Firefox 4 */
@@ -841,7 +840,7 @@
             }
             
             .navbar a {
-                color: white;
+                color: #faecd3;
             }
             /* FAVICON */
             
@@ -860,6 +859,7 @@
             footer {
                 font-family: "brandon-grotesque", "Brandon Grotesque", "Century Gothic", sans-serif;
                 border: 0 !important;
+                position: relative;
                 clear: both;
                 border-style: solid;
                 border-width: 1px 0 0 0;

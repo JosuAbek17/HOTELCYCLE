@@ -3,76 +3,26 @@ $(document).ready(function() {
     setFooter();
     setLogo();
     setReserva();
-    $(".serv-2").hide();
-    $(".serv-3").hide();
-    $(".serv-4").hide();
-    $(".serv-5").hide();
-    $(".col-inicio").hide();
-    $(".col-registro").hide();
-    $(".fav2").hide();
+    setContacto();
+    setMap();
+
 });
 
-function setHab() {
-    $(".serv-1").show();
-    $(".serv-2").hide();
-    $(".serv-3").hide();
-    $(".serv-4").hide();
-    $(".serv-5").hide();
-}
-
-function setRest() {
-    $(".serv-1").hide();
-    $(".serv-2").show();
-    $(".serv-3").hide();
-    $(".serv-4").hide();
-    $(".serv-5").hide();
-}
-
-function setBar() {
-    $(".serv-1").hide();
-    $(".serv-2").hide();
-    $(".serv-3").show();
-    $(".serv-4").hide();
-    $(".serv-5").hide();
-}
-
-function setShop() {
-    $(".serv-1").hide();
-    $(".serv-2").hide();
-    $(".serv-3").hide();
-    $(".serv-4").show();
-    $(".serv-5").hide();
-}
-
-function setAct() {
-    $(".serv-1").hide();
-    $(".serv-2").hide();
-    $(".serv-3").hide();
-    $(".serv-4").hide();
-    $(".serv-5").show();
-}
 $(document).on("scroll", function() {
     if ($(document).scrollTop() > 200) {
         $("header").addClass("small");
         $(".header").css("background-color", "#10253d");
         $(".header a").css("color", "#faecd3");
-        $(".header span").css("color", "#faecd3");
-        $(".fav2").show();
-        $(".fav").hide();
+
     } else {
         $("header").removeClass("small");
-        $(".header").css("background-color", "transparent");
-        $(".header a").css("color", "white");
-        $(".header span").css("color", "white");
-        $(".fav2").hide();
-        $(".fav").show();
+        $(".header").css("background-color", "#10253d");
+        $(".header a").css("color", "#faecd3");
+
     }
 });
 
-function about() {
-    $(".div2").show();
 
-}
 
 function stay() {
     $(".div2").show();
@@ -82,16 +32,6 @@ function servicio() {
     $(".div3").show();
 }
 
-function shop() {
-    $(".div4").show();
-}
-
-
-function contacto() {
-    $(".contacto").show();
-    $(".footer").show();
-
-}
 
 
 function setReserva() {
@@ -180,22 +120,48 @@ function setLogo() {
     }
 }
 
+function setContacto() {
+    var codeContact = '';
+    codeReserva += '<div class="row row-cont">';
+    codeReserva += '      <div class="col-md-12 col-sm-12 col-lg-12 col-cont">';
+    codeContact += '<form class="form-inline" action="#" method="post">';
+    codeContact += '<div class="form-group">';
+    codeContact += '<input type="email" class="form-control" id="email" placeholder="Email">';
+    codeContact += '</div>';
+    codeContact += '<div class="form-group">';
+    codeContact += '<input type="text" class="form-control" id="nombre" placeholder="Nombre">';
+    codeContact += '</div>';
+    codeContact += '<div class="form-group">';
+    codeContact += '<input type="text" class="form-control" id="apellido" placeholder="Apellidos">';
+    codeContact += '</div>';
+    codeContact += '<button type="submit" class="btn btn-default">Submit</button>';
+    codeContact += '</form>';
+    codeContact += '</div>';
+    codeContact += '</div>';
+
+
+    try {
+        document.getElementsByTagName('contacto')[0].innerHTML = codeContact;
+    } catch (error) {
+        msg = "Fallo, no se ha encontrado contacto: " + error;
+        log(msg)
+    }
+}
+
+
 function setHeader() {
 
     var codeHeader = '';
     codeHeader += '    <div class="row nav-row">';
     codeHeader += ' <nav class="navbar">';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-img">';
-    codeHeader += '<a class="nav-a fav" href="#">';
-    codeHeader += ' <img class="fav" src="../img/logo.png" alt="Home">';
-    codeHeader += '</a>';
-    codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/fav2.png" alt="logo"></a>';
+    codeHeader += ' <a class="nav-a fav2" href="index.html"><img class="fav2" src="../img/fav2.png" alt="logo"></a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-menu">';
     codeHeader += '                 <a class="nav-a" onclick="stay()" href="index.html#stay">Stay</a>';
     codeHeader += '                 <a class="nav-a" onclick="servicio()" href="index.html#servicio">Servicios</a>';
     codeHeader += '                 <a class="nav-a" onclick="about()" href="index.html#nosotros">Nosotros</a>';
-    codeHeader += '                 <a class="nav-a" onclick="contacto()" href="index.html#contacto">Contacto</a>';
+    codeHeader += '                 <a class="nav-a" onclick="contacto()" href="contacto.html">Contacto</a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-otro">';
     codeHeader += '         <a class="nav-a" href="#">ES</a>';
