@@ -1,10 +1,13 @@
 $(document).ready(function() {
-    setHeader();
-    setFooter();
-    setContacto();
     setMap();
+    setHeader();
+    setContacto();
+
+    setFooter();
+
 
     setLogo();
+
 });
 $(document).on("scroll", function() {
     if ($(document).scrollTop() > 200) {
@@ -71,7 +74,7 @@ function setHeader() {
     codeHeader += '    <div class="row nav-row">';
     codeHeader += ' <nav class="navbar">';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-img">';
-    codeHeader += ' <a class="nav-a fav2" href="index.html"><img class="fav2" src="../img/fav2.png" alt="logo"></a>';
+    codeHeader += ' <a class="nav-a fav2" href="index.html"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-menu">';
     codeHeader += '                 <a class="nav-a" onclick="stay()" href="index.html#stay">Stay</a>';
@@ -148,12 +151,12 @@ var marcador;
 
 function setMap() {
 
-    var latitud = 43.2679701;
-    var longitud = -2.9386427;
+    var latitud = 43.3387367;
+    var longitud = -3.0081319;
     mapa = new google.maps.Map(document.getElementById("map"), {
         center: { lat: latitud, lng: longitud },
         zoom: 15
-    });
+    })
     marcador = new google.maps.Marker({
         position: { lat: latitud, lng: longitud },
         map: mapa,

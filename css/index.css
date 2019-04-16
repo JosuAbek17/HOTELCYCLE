@@ -87,6 +87,7 @@
             }
             
             .nav-row {
+                height: 100%;
                 width: 100%;
                 margin: 0;
                 display: table;
@@ -199,7 +200,7 @@
             .col-stay-form {
                 width: 100%;
                 text-align: center;
-                padding: 30px 0 50px 0;
+                padding: 50px;
                 background-color: #10253d;
             }
             
@@ -788,12 +789,12 @@
             .header {
                 font-family: 'Lato', sans-serif;
                 width: 100%;
-                height: auto;
+                height: 120px;
                 position: fixed;
                 top: 0;
                 left: 0;
                 z-index: 1;
-                background-color: #10253d;
+                background-color: white;
                 transition: all 1s;
                 -moz-transition: all 1s;
                 /* Firefox 4 */
@@ -818,8 +819,8 @@
             }
             
             header.small {
-                height: auto;
-                padding: 5px;
+                height: 70px;
+                padding: 0px;
             }
             
             .fav {
@@ -831,6 +832,7 @@
             }
             
             .navbar {
+                height: 100%;
                 margin-bottom: 0;
                 justify-content: normal;
             }
@@ -840,7 +842,7 @@
             }
             
             .navbar a {
-                color: #faecd3;
+                color: black;
             }
             /* FAVICON */
             
@@ -931,12 +933,6 @@
             .foot-col a:hover {
                 color: #faecd3;
                 text-decoration: none;
-            }
-            /* MAP */
-            
-            #map {
-                width: 100%;
-                height: auto;
             }
             /* ANIMACION */
             

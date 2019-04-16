@@ -11,13 +11,13 @@ $(document).ready(function() {
 $(document).on("scroll", function() {
     if ($(document).scrollTop() > 200) {
         $("header").addClass("small");
-        $(".header").css("background-color", "#10253d");
-        $(".header a").css("color", "#faecd3");
+        $(".header").css("background-color", "white");
+        $(".header a").css("color", "black");
 
     } else {
         $("header").removeClass("small");
-        $(".header").css("background-color", "#10253d");
-        $(".header a").css("color", "#faecd3");
+        $(".header").css("background-color", "white");
+        $(".header a").css("color", "black");
 
     }
 });
@@ -38,11 +38,10 @@ function setReserva() {
     var codeReserva = '';
     codeReserva += '<div class="row row-stay-form">';
     codeReserva += '      <div class="col-md-12 col-sm-12 col-lg-12 col-stay-form">';
-    codeReserva += '<h3>¿ A qué esperas ?</h3>';
     codeReserva += '<form class="form-inline" action="#" method="post">';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<label for="inputCheckIn" class="sr-only">Check-In</label>';
-    codeReserva += '<input type="date" class="form-control" id="checkin" placeholder="Check-In">';
+    codeReserva += '<input type="date" class="form-control" id="checkin" placeholder="Check-In" value"Chek-In">';
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<label for="inputCheckOut" class="sr-only">Check-Out</label>';
@@ -155,7 +154,7 @@ function setHeader() {
     codeHeader += '    <div class="row nav-row">';
     codeHeader += ' <nav class="navbar">';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-img">';
-    codeHeader += ' <a class="nav-a fav2" href="index.html"><img class="fav2" src="../img/fav2.png" alt="logo"></a>';
+    codeHeader += ' <a class="nav-a fav2" href="index.html"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-menu">';
     codeHeader += '                 <a class="nav-a" onclick="stay()" href="index.html#stay">Stay</a>';
