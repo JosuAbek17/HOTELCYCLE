@@ -4,7 +4,8 @@ $(document).ready(function() {
     setLogo();
     setReserva();
     setContacto();
-    setMap();
+    $(".fav2").hide();
+
 
 });
 
@@ -13,11 +14,15 @@ $(document).on("scroll", function() {
         $("header").addClass("small");
         $(".header").css("background-color", "white");
         $(".header a").css("color", "black");
+        $(".logotit").hide();
+        $(".fav2").show();
 
     } else {
         $("header").removeClass("small");
         $(".header").css("background-color", "white");
         $(".header a").css("color", "black");
+        $(".logotit").show();
+        $(".fav2").hide();
 
     }
 });
@@ -153,14 +158,16 @@ function setHeader() {
     var codeHeader = '';
     codeHeader += '    <div class="row nav-row">';
     codeHeader += ' <nav class="navbar">';
-    codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-img">';
-    codeHeader += ' <a class="nav-a fav2" href="index.html"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
+    codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-menu">';
+    codeHeader += '     <a href="#" onclick="menu()">MENU</a>';
+    // codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
     codeHeader += '    </div>';
-    codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-menu">';
-    codeHeader += '                 <a class="nav-a" onclick="stay()" href="index.html#stay">Stay</a>';
-    codeHeader += '                 <a class="nav-a" onclick="servicio()" href="index.html#servicio">Servicios</a>';
-    codeHeader += '                 <a class="nav-a" onclick="about()" href="index.html#nosotros">Nosotros</a>';
-    codeHeader += '                 <a class="nav-a" onclick="contacto()" href="contacto.html">Contacto</a>';
+    codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-logo">';
+    codeHeader += '                 <a class="nav-a logotit" href="index.html#"><img class="logotit" src="../img/logotitulo.png" alt="logo"></a>';
+    codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
+    // codeHeader += '                 <a class="nav-a" onclick="servicio()" href="index.html#servicio">Servicios</a>';
+    // codeHeader += '                 <a class="nav-a" onclick="about()" href="index.html#nosotros">Nosotros</a>';
+    // codeHeader += '                 <a class="nav-a" onclick="contacto()" href="contacto.html">Contacto</a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-otro">';
     codeHeader += '         <a class="nav-a" href="#">ES</a>';
