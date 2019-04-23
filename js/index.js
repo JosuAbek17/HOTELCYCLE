@@ -3,8 +3,10 @@ $(document).ready(function() {
     setFooter();
     setLogo();
     setReserva();
-    setContacto();
+    setMenu();
+    setInstagram();
     $(".fav2").hide();
+
 
 
 });
@@ -37,7 +39,34 @@ function servicio() {
     $(".div3").show();
 }
 
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
 
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+function setMenu() {
+    var codeMenu = '';
+    codeMenu += '<div id="myNav" class="overlay">';
+    codeMenu += '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
+    codeMenu += '<div class="overlay-content">';
+    codeMenu += '<a href="#">Stay</a>';
+    codeMenu += '<a href="#">Servicios</a>';
+    codeMenu += '<a href="#">Nosotros</a>';
+    codeMenu += '<a href="contacto.html">Contacto</a>';
+    codeMenu += '</div>';
+    codeMenu += '</div>';
+
+
+    try {
+        document.getElementsByTagName('menu')[0].innerHTML = codeMenu;
+    } catch (error) {
+        msg = "Fallo, no se ha encontrado menu." + error;
+        log(msg);
+    }
+}
 
 function setReserva() {
     var codeReserva = '';
@@ -124,33 +153,7 @@ function setLogo() {
     }
 }
 
-function setContacto() {
-    var codeContact = '';
-    codeReserva += '<div class="row row-cont">';
-    codeReserva += '      <div class="col-md-12 col-sm-12 col-lg-12 col-cont">';
-    codeContact += '<form class="form-inline" action="#" method="post">';
-    codeContact += '<div class="form-group">';
-    codeContact += '<input type="email" class="form-control" id="email" placeholder="Email">';
-    codeContact += '</div>';
-    codeContact += '<div class="form-group">';
-    codeContact += '<input type="text" class="form-control" id="nombre" placeholder="Nombre">';
-    codeContact += '</div>';
-    codeContact += '<div class="form-group">';
-    codeContact += '<input type="text" class="form-control" id="apellido" placeholder="Apellidos">';
-    codeContact += '</div>';
-    codeContact += '<button type="submit" class="btn btn-default">Submit</button>';
-    codeContact += '</form>';
-    codeContact += '</div>';
-    codeContact += '</div>';
 
-
-    try {
-        document.getElementsByTagName('contacto')[0].innerHTML = codeContact;
-    } catch (error) {
-        msg = "Fallo, no se ha encontrado contacto: " + error;
-        log(msg)
-    }
-}
 
 
 function setHeader() {
@@ -159,7 +162,7 @@ function setHeader() {
     codeHeader += '    <div class="row nav-row">';
     codeHeader += ' <nav class="navbar">';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-menu">';
-    codeHeader += '     <a href="#" onclick="menu()">MENU</a>';
+    codeHeader += '     <span style="font-size:14px;cursor:pointer;letter-spacing: 2px" onclick="openNav()">&#9776; MENU</span>';
     // codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-logo">';
@@ -170,8 +173,7 @@ function setHeader() {
     // codeHeader += '                 <a class="nav-a" onclick="contacto()" href="contacto.html">Contacto</a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-otro">';
-    codeHeader += '         <a class="nav-a" href="#">ES</a>';
-    codeHeader += '         <a class="nav-a" href="#">EN</a>';
+    codeHeader += '       <span style="font-size:14px;cursor:pointer;letter-spacing: 2px; color: black" onclick="openBook()">BOOK NOW</span>';
     codeHeader += '    </div>';
     codeHeader += '</nav>';
     codeHeader += '    </div>';
@@ -234,23 +236,7 @@ function setFooter() {
     }
 }
 
-var mapa;
-var marcador;
 
-function setMap() {
-
-    var latitud = 43.2679701;
-    var longitud = -2.9386427;
-    mapa = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: latitud, lng: longitud },
-        zoom: 15
-    });
-    marcador = new google.maps.Marker({
-        position: { lat: latitud, lng: longitud },
-        map: mapa,
-        title: "HOTEL CYCLE"
-    })
-}
 
 // ROOM //
 var slideIndex = 1;
@@ -362,4 +348,55 @@ function showDivs4(m) {
     }
     x[slideIndex4 - 1].style.display = "block";
     dots[slideIndex4 - 1].className += " w3-white";
+}
+
+// INSTAGRAM //
+
+function setInstagram() {
+
+    var codeInstagram = '';
+    codeInstagram += '<div id="servicio" class="container-fluid div3 animated fadeIn fast">';
+    codeInstagram += '<div class="row row-insta">';
+    codeInstagram += '<div class="col-md-12 col-sm-12 col-lg-12 col-insta">';
+    codeInstagram += '<p class="insta">INSTAGRAM <a href="#"><i class="fab fa - instagram "></i> @HotelCycle</a></p>';
+    codeInstagram += '</div>';
+    codeInstagram += '</div>';
+    codeInstagram += '<div class="row row-insta-fotos">';
+    codeInstagram += '<div class="col-md-3 col-sm-3 col-lg-3 col-insta-fotos">';
+    codeInstagram += '<div class="ins insta1">';
+
+    codeInstagram += '</div>';
+    codeInstagram += '<div class="ins insta2">';
+
+    codeInstagram += '</div>';
+
+    codeInstagram += '</div>';
+    codeInstagram += '<div class="col-md-3 col-sm-3 col-lg-3 col-insta-fotos alone">';
+    codeInstagram += '<div class="ins insta3">';
+
+    codeInstagram += '</div>';
+
+    codeInstagram += '</div>';
+    codeInstagram += '<div class="col-md-3 col-sm-3 col-lg-3 col-insta-fotos">';
+    codeInstagram += '<div class="ins insta4">';
+
+    codeInstagram += '</div>';
+    codeInstagram += '<div class="ins insta5">';
+
+    codeInstagram += '</div>';
+    codeInstagram += '</div>';
+    codeInstagram += '<div class="col-md-3 col-sm-3 col-lg-3 col-insta-fotos alone">';
+    codeInstagram += '<div class="ins insta6">';
+
+    codeInstagram += '</div>';
+    codeInstagram += '</div>';
+    codeInstagram += '</div>';
+    codeInstagram += '</div>';
+
+    try {
+        document.getElementsByTagName('instagram')[0].innerHTML = codeInstagram;
+    } catch (error) {
+        msg = "Fallo, no se ha encontrado Instagram: " + error;
+        log(msg)
+    }
 }

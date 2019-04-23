@@ -2,8 +2,11 @@ $(document).ready(function() {
     setHeader();
     setContacto();
     setFooter();
+    setMenu();
     setLogo();
-    setMap();
+    setInstagram();
+
+
 });
 
 $(document).on("scroll", function() {
@@ -39,6 +42,35 @@ function setLogo() {
     }
 };
 
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+function setMenu() {
+    var codeMenu = '';
+    codeMenu += '<div id="myNav" class="overlay">';
+    codeMenu += '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
+    codeMenu += '<div class="overlay-content">';
+    codeMenu += '<a href="#">Stay</a>';
+    codeMenu += '<a href="#">Servicios</a>';
+    codeMenu += '<a href="#">Nosotros</a>';
+    codeMenu += '<a href="contacto.html">Contacto</a>';
+    codeMenu += '</div>';
+    codeMenu += '</div>';
+
+
+    try {
+        document.getElementsByTagName('menu')[0].innerHTML = codeMenu;
+    } catch (error) {
+        msg = "Fallo, no se ha encontrado menu." + error;
+        log(msg);
+    }
+}
+
 function setContacto() {
     var codeContact = '';
     codeContact += '<div class="row row-cont">';
@@ -52,9 +84,6 @@ function setContacto() {
     codeContact += '</div>';
     codeContact += '<div class="form-group">';
     codeContact += '<input type="email" class="form-control" id="email" placeholder="Email">';
-    codeContact += '</div>';
-    codeContact += '<div class="form-group">';
-    codeContact += '<input type="tel" class="form-control" id="tel" placeholder="Teléfono">';
     codeContact += '</div>';
     codeContact += '<button type="submit" class="btn btn-default">Submit</button>';
     codeContact += '</form>';
@@ -76,7 +105,7 @@ function setHeader() {
     codeHeader += '    <div class="row nav-row">';
     codeHeader += ' <nav class="navbar">';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-menu">';
-    codeHeader += '     <a href="#" onclick="menu()">MENU</a>';
+    codeHeader += '     <span style="font-size:14px;cursor:pointer;letter-spacing: 2px" onclick="openNav()">&#9776; MENU</span>';
     // codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-logo">';
@@ -167,6 +196,7 @@ function setMap() {
         title: "HOTEL CYCLE"
     })
 }
+
 // var questionNum = 0; // keep count of question, used for IF condition.
 // var question = '<h1>¿ Cuál es tu nombre ?</h1>'; // first question
 
