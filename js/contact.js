@@ -85,7 +85,7 @@ function setContacto() {
     codeContact += '<div class="form-group">';
     codeContact += '<input type="email" class="form-control" id="email" placeholder="Email">';
     codeContact += '</div>';
-    codeContact += '<button type="submit" class="btn btn-default">Submit</button>';
+    codeContact += '<button type="submit" class="btn btn-default">Contacto</button>';
     codeContact += '</form>';
     codeContact += '</div>';
     codeContact += '</div>';

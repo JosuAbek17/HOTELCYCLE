@@ -7,9 +7,9 @@ body {
 
 .div1 {
     padding: 0;
-    height: 100vh;
+    height: 100vh !important;
     /* background-image: url("../img/wooden-house-background.jpg"); */
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: white;
     filter: brightness(0.8);
     background-repeat: no-repeat;
     background-size: cover;
@@ -623,7 +623,7 @@ color: #ff0458;
 }
 
 .row-stay-desc {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding: 60px;
     max-width: 700px;
     margin: auto;
@@ -966,9 +966,9 @@ left: 0; */
     /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #10253d;
     /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #10253d;
     /* Black w/opacity */
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -1028,7 +1028,7 @@ left: 0; */
 
 @media screen and (max-height: 450px) {
     .overlay a {
-        font-size: 20px
+        font-size: 20px;
     }
     .overlay .closebtn {
         font-size: 40px;

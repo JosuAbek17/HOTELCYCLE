@@ -1,0 +1,87 @@
+/* ROOMS */
+
+.row-rooms {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px 40px;
+}
+
+.col-rooms {}
+
+.row-rooms h4 {
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+    margin: 0;
+}
+
+.row-rooms p {
+    font-family: 'Lato', sans-serif;
+    padding: 0 50px 10px 30px;
+    color: #7d7d7d;
+}
+
+.row-rooms img {
+    width: 100%;
+    height: 300px;
+}
+
+.row-rooms i {
+    font-size: 12px;
+}
+
+.stay-i {
+    font-family: 'Lato', sans-serif;
+    width: 150px;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.stay-icon {
+    padding: 0 30px;
+}
+
+.stay-btn {
+    padding: 40px;
+    text-align: center;
+}
+
+.stay-btn button {
+    width: 100%;
+    max-width: 250px;
+    height: 44px;
+    font-family: 'Lato', sans-serif;
+    line-height: 44px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    border: 1px solid #9aa7b4;
+    border-radius: 0;
+    outline: 0px;
+    padding: 0 15px;
+    background-color: transparent;
+    display: inline-block;
+    -webkit-transition: ease 1s all;
+    transition: ease 1s all;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.stay-btn button:hover {
+    color: white;
+    border: 1px solid #091522;
+    background-color: #091522;
+}
+
+.stay-btn button:focus {
+    outline: 0px;
+}
+
+.stay-hr {
+    border: 1px solid #ffa600;
+    border-radius: 300px/10px;
+    height: 0px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+}
