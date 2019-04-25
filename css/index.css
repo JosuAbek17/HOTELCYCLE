@@ -346,7 +346,7 @@ menu {
     text-decoration: none;
 }
 
-.col-stay-room-mas a::hoveer {
+.col-stay-room-mas a:hover {
     color: white;
     text-decoration: none;
 }
