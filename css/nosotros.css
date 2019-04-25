@@ -1,0 +1,79 @@
+.row-header {
+    width: 100%;
+    height: 120px;
+}
+
+.row-us-img {
+    background-image: url("../img/woman-2906851_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin: 0;
+}
+
+.row-hotel {
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.row-hotel h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.row-hotel p {
+    color: #7d7d7d;
+    font-size: 16px;
+    padding: 30px;
+}
+
+.row-us-4 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.col-us-4-img1 {
+    width: 100%;
+    height: 631.5px;
+    background-image: url("../img/26918897496_d3d2acbb40_b.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.col-us-4-img2 {
+    width: 100%;
+    height: 631.5px;
+    background-image: url("../img/insta3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.col-us-4-blue {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #10253d;
+    padding: 110px;
+}
+
+.col-us-4-white {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: black;
+    padding: 110px;
+    line-height: 30px;
+}
+
+.stay-hr-insta-us {
+    height: 0px;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+}

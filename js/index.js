@@ -2,9 +2,11 @@ $(document).ready(function() {
     setHeader();
     setFooter();
     setLogo();
-    setReserva();
     setMenu();
     setInstagram();
+    setReserva();
+
+
     $(".fav2").hide();
 
 
@@ -47,14 +49,22 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+function openBook() {
+    document.getElementById("myBook").style.width = "100%";
+}
+
+function closeBook() {
+    document.getElementById("myBook").style.width = "0%";
+}
+
 function setMenu() {
     var codeMenu = '';
     codeMenu += '<div id="myNav" class="overlay">';
-    codeMenu += '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
+    codeMenu += '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">CLOSE</a>';
     codeMenu += '<div class="overlay-content">';
     codeMenu += '<a href="stay.html">Stay</a>';
-    codeMenu += '<a href="#">Servicios</a>';
-    codeMenu += '<a href="#">Nosotros</a>';
+    codeMenu += '<a href="servicios.html">Servicios</a>';
+    codeMenu += '<a href="nosotros.html">Nosotros</a>';
     codeMenu += '<a href="contacto.html">Contacto</a>';
     codeMenu += '</div>';
     codeMenu += '</div>';
@@ -64,6 +74,27 @@ function setMenu() {
         document.getElementsByTagName('menu')[0].innerHTML = codeMenu;
     } catch (error) {
         msg = "Fallo, no se ha encontrado menu." + error;
+        log(msg);
+    }
+}
+
+function setBook() {
+    var codeBook = '';
+    codeBook += '<div id="myBook" class="overlay">';
+    codeBook += '<a href="javascript:void(0)" class="closebtn" onclick="closeBook()">CLOSE</a>';
+    codeBook += '<div class="overlay-content">';
+    codeBook += '<a href="stay.html">Stay</a>';
+    codeBook += '<a href="servicios.html">Servicios</a>';
+    codeBook += '<a href="nosotros.html">Nosotros</a>';
+    codeBook += '<a href="contacto.html">Contacto</a>';
+    codeBook += '</div>';
+    codeBook += '</div>';
+
+
+    try {
+        document.getElementsByTagName('book')[0].innerHTML = codeBook;
+    } catch (error) {
+        msg = "Fallo, no se ha encontrado book." + error;
         log(msg);
     }
 }
@@ -142,7 +173,7 @@ function setReserva() {
 function setLogo() {
     var codeLogo = '';
     codeLogo += ' <div class="favicon">';
-    codeLogo += '   <a href="index.html#"><img src="../img/fav2.png" alt="Home"></a>';
+    codeLogo += '   <a href="index.html"><img src="../img/fav2.png" alt="Home"></a>';
     codeLogo += ' </div>';
 
     try {
