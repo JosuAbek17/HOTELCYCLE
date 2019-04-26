@@ -1,0 +1,78 @@
+.divserv {
+    padding: 0;
+    height: 100vh !important;
+    background-image: url("../img/11_DeckStaff_RGB.png");
+    background-color: white;
+    filter: brightness(0.8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.serv1 {
+    background-position: bottom;
+    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/dining-area-sea-containers-food-drink.jpg");
+}
+
+.serv2 {
+    background-position: top;
+    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/sea-container-restaurant_.png");
+}
+
+.serv3 {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Rumpus-Room-September-2018-44-e1553529121593.jpg");
+}
+
+.serv4 {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/breakfast-sea-containers.png");
+}
+
+.mySlides2 {
+    display: none;
+    width: 100%;
+    height: 550px;
+}
+
+.serv-hr {
+    border: 1px solid #ffa600;
+    border-radius: 300px/10px;
+    height: 0px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 20px auto 100px;
+}
+
+.serv2-hr {
+    border: 1px solid #ffa600;
+    border-radius: 300px/10px;
+    height: 0px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 20px auto 70px;
+}
+
+.col-serv-h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.row-cont select {
+    font-weight: bold;
+    width: 170px !important;
+    height: 45px !important;
+    background: rgba(250, 250, 250, .03);
+    color: #faecd3;
+    padding: 0px 0px 0px 21px;
+    border-radius: 0;
+    border: 0;
+    border-right: 1px solid rgba(224, 224, 224, .05) !important;
+}

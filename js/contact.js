@@ -5,6 +5,7 @@ $(document).ready(function() {
     setMenu();
     setLogo();
     setInstagram();
+    setMap();
 
 
 });
@@ -184,8 +185,8 @@ var marcador;
 
 function setMap() {
 
-    var latitud = 43.3387367;
-    var longitud = -3.0081319;
+    var latitud = 43.34099340466481;
+    var longitud = -3.0189857833573797;
     mapa = new google.maps.Map(document.getElementById("map"), {
         center: { lat: latitud, lng: longitud },
         zoom: 15

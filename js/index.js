@@ -3,6 +3,7 @@ $(document).ready(function() {
     setFooter();
     setLogo();
     setMenu();
+    setBook();
     setInstagram();
     setReserva();
 
@@ -114,7 +115,7 @@ function setReserva() {
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<select class="form-control">';
-    codeReserva += '                        <option selected value="0">Adultos</option>';
+    codeReserva += '                        <option selected value="0">Personas</option>';
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
     codeReserva += '                        <option value="3">4</option>';
@@ -218,15 +219,15 @@ function setFooter() {
     var codeFooter = '';
     codeFooter += '<div class="row foot-row">';
     codeFooter += '<div class="col-md-12 col-sm-12 foot-col">';
-    codeFooter += '<p>Euskadi Plaza, 5, 48009 Bilbo, Bizkaia, España, W4 5PY</p>';
+    codeFooter += '<p>Muelle de Arriluze, 20, 48992 Getxo, Bizkaia</p>';
     codeFooter += '</div>';
     codeFooter += '</div>';
     codeFooter += '<div class="row foot-row  info">';
     codeFooter += '<div class="col-md-6 col-sm-6 foot-col">';
-    codeFooter += '<p>T <span><a href="tel:555555555">+ 555 555 555</a></span>';
+    codeFooter += '<p>T <span><a href="tel:#">+34 656 798 980</a></span>';
     codeFooter += '</div>';
     codeFooter += '<div class="col-md-6 col-sm-6 foot-col">';
-    codeFooter += '<p>E <span><a href="mailto:aaa@gmail.com">aaa@gmail.com</a></span></p>';
+    codeFooter += '<p>E <span><a href="mailto:hotelcycle@gmail.com">hotelcycle@gmail.com</a></span></p>';
     codeFooter += '</div>';
     codeFooter += '</div>';
     codeFooter += '<div class="row foot-row social">';

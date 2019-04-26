@@ -275,8 +275,8 @@ menu {
 
 .col-stay-room h3 {
     position: absolute;
-    top: 15%;
-    left: 15%;
+    top: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -289,7 +289,7 @@ menu {
 .room1 {
     background-position: center;
     background-size: cover;
-    background-image: url("../img/room2.jpg");
+    background-image: url("../img/room3.jpg");
 }
 
 .room2 {
@@ -301,7 +301,7 @@ menu {
 .room3 {
     background-position: center;
     background-size: cover;
-    background-image: url("../img/room3.jpg");
+    background-image: url("../img/room2.jpg");
 }
 
 .mySlides {
@@ -401,8 +401,8 @@ color: #ff0458;
 
 .col-stay-food h3 {
     position: absolute;
-    top: 15%;
-    left: 15%;
+    top: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -481,8 +481,8 @@ color: #ff0458;
 
 .col-stay-shop h3 {
     position: absolute;
-    top: 15%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -561,8 +561,8 @@ color: #ff0458;
 
 .col-stay-act h3 {
     position: absolute;
-    top: 15%;
-    left: 15%;
+    top: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -862,6 +862,8 @@ header.small {
 }
 
 .navbar {
+    max-width: 1100px;
+    margin: auto;
     height: 100%;
     margin-bottom: 0;
     justify-content: normal;
@@ -1036,7 +1038,7 @@ left: 0; */
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
+    font-size: 20px;
 }
 
 
