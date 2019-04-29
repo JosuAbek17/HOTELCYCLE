@@ -254,8 +254,6 @@ menu {
     border-color: #ff0458;
 }
 
-.col-stay-food-mas button {}
-
 
 /* ROOMS */
 
@@ -975,6 +973,7 @@ left: 0; */
 /* The Overlay (background) */
 
 .overlay {
+    font-family: 'Lato', sans-serif;
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
@@ -1016,7 +1015,7 @@ left: 0; */
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #ff0458;
     display: block;
     /* Display block instead of inline */
     transition: 0.3s;

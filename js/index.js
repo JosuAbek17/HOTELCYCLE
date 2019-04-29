@@ -82,12 +82,15 @@ function setMenu() {
 function setBook() {
     var codeBook = '';
     codeBook += '<div id="myBook" class="overlay">';
+    // codeBook += '<div class="row book">';
+    // codeBook += '   <div class="col-md-10">';
+    // codeBook += '     <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
+    // codeBook += '   </div>';
+    // codeBook += '   <div class="col-md-2">';
     codeBook += '<a href="javascript:void(0)" class="closebtn" onclick="closeBook()">CLOSE</a>';
+    // codeBook += '   </div>';
     codeBook += '<div class="overlay-content">';
-    codeBook += '<a href="stay.html">Stay</a>';
-    codeBook += '<a href="servicios.html">Servicios</a>';
-    codeBook += '<a href="nosotros.html">Nosotros</a>';
-    codeBook += '<a href="contacto.html">Contacto</a>';
+    codeBook += '<a href="stay.html">RESERVA</a>';
     codeBook += '</div>';
     codeBook += '</div>';
 

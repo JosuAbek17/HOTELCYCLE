@@ -97,7 +97,7 @@ function setComida() {
     codeComida += '                    </select>';
     codeComida += '</div>';
 
-    codeComida += '<button type="submit" class="btn btn-default">RESERVA</button>';
+    codeComida += '<button type="submit" class="btn btn-default">RESERVA MESA</button>';
     codeComida += '</form>';
     codeComida += '</div>';
     codeComida += '</div>';
