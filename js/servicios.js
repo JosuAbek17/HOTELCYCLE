@@ -29,6 +29,8 @@ function showDivs(n) {
     dots[slideIndex - 1].className += " w3-white";
 }
 
+
+
 function setComida() {
     var codeComida = '';
     codeComida += '<div class="row row-cont">';

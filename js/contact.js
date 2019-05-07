@@ -185,8 +185,8 @@ var marcador;
 
 function setMap() {
 
-    var latitud = 43.34099340466481;
-    var longitud = -3.0189857833573797;
+    var latitud = 43.336094;
+    var longitud = -3.01023;
     mapa = new google.maps.Map(document.getElementById("map"), {
         center: { lat: latitud, lng: longitud },
         zoom: 15
