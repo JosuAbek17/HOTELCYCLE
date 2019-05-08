@@ -41,6 +41,7 @@
 
 .serv6 {
     background-position: center;
+    background-size: cover;
     background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/maxresdefault.jpg");
 }
 
