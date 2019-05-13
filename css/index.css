@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+.row p {
+    color: #7d7d7d;
+}
+
 .div1 {
     padding: 0;
     height: 100vh !important;
@@ -425,7 +429,7 @@ color: #ff0458;
 .food3 {
     background-position: center;
     background-size: cover;
-    background-image: url("../img/food3.jpg");
+    background-image: url("../img/Sea_Containers_Bar.jpg");
 }
 
 .mySlides2 {
@@ -577,15 +581,15 @@ color: #ff0458;
 }
 
 .act2 {
-    background-position: top;
+    background-position: center;
     background-size: cover;
-    background-image: url("../img/act2.jpeg");
+    background-image: url("../img/shop2.jpg");
 }
 
 .act3 {
     background-position: center;
     background-size: cover;
-    background-image: url("../img/act3.jpg");
+    background-image: url("../img/gym2.jpg");
 }
 
 .mySlides4 {
@@ -678,6 +682,7 @@ color: #ff0458;
 }
 
 .col-insta p {
+    color: black !important;
     letter-spacing: 2px;
     font-family: 'Lato', sans-serif;
 }

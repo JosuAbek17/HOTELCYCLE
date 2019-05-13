@@ -3,10 +3,11 @@ $(document).ready(function() {
     setFooter();
     setLogo();
     setMenu();
-    setBook();
     setInstagram();
+    setBook();
+
     setReserva();
-    setMap();
+    // setMap();
 
 
     $(".fav2").hide();
@@ -35,15 +36,6 @@ $(document).on("scroll", function() {
 });
 
 
-
-function stay() {
-    $(".div2").show();
-}
-
-function servicio() {
-    $(".div3").show();
-}
-
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
@@ -66,7 +58,8 @@ function setMenu() {
     codeMenu += '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">CLOSE</a>';
     codeMenu += '<div class="overlay-content">';
     codeMenu += '<a href="stay.html">Stay</a>';
-    codeMenu += '<a href="servicios.html">Servicios</a>';
+    codeMenu += '<a href="f&d.html">Food & Drink</a>';
+    codeMenu += '<a href="servicio.html">Servicios</a>';
     codeMenu += '<a href="nosotros.html">Nosotros</a>';
     codeMenu += '<a href="contacto.html">Contacto</a>';
     codeMenu += '</div>';
@@ -328,32 +321,32 @@ function showDivs2(m) {
 }
 
 // SHOP //
-var slideIndex3 = 1;
-showDivs3(slideIndex3);
+// var slideIndex3 = 1;
+// showDivs3(slideIndex3);
 
-function plusDivs3(m) {
-    showDivs3(slideIndex3 += m);
-}
+// function plusDivs3(m) {
+//     showDivs3(slideIndex3 += m);
+// }
 
-function currentDiv3(m) {
-    showDivs3(slideIndex3 = m);
-}
+// function currentDiv3(m) {
+//     showDivs3(slideIndex3 = m);
+// }
 
-function showDivs3(m) {
-    var i;
-    var x = document.getElementsByClassName("mySlides3");
-    var dots = document.getElementsByClassName("demo");
-    if (m > x.length) { slideIndex3 = 1 }
-    if (m < 1) { slideIndex3 = x.length }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    x[slideIndex3 - 1].style.display = "block";
-    dots[slideIndex3 - 1].className += " w3-white";
-}
+// function showDivs3(m) {
+//     var i;
+//     var x = document.getElementsByClassName("mySlides3");
+//     var dots = document.getElementsByClassName("demo");
+//     if (m > x.length) { slideIndex3 = 1 }
+//     if (m < 1) { slideIndex3 = x.length }
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display = "none";
+//     }
+//     for (i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(" w3-white", "");
+//     }
+//     x[slideIndex3 - 1].style.display = "block";
+//     dots[slideIndex3 - 1].className += " w3-white";
+// }
 
 // ACTIVITY //
 var slideIndex4 = 1;
@@ -388,7 +381,7 @@ function showDivs4(m) {
 function setInstagram() {
 
     var codeInstagram = '';
-    codeInstagram += '<div id="servicio" class="container-fluid div3 animated fadeIn fast">';
+    codeInstagram += '<div class="container-fluid animated fadeIn fast">';
     codeInstagram += '<div class="row row-insta">';
     codeInstagram += '<div class="col-md-12 col-sm-12 col-lg-12 col-insta">';
     codeInstagram += '<p class="insta">INSTAGRAM <a href="#"><i class="fa fa-instagram"></i> @HotelCycle</a></p>';
