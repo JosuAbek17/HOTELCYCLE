@@ -3,9 +3,8 @@ $(document).ready(function() {
     setFooter();
     setLogo();
     setMenu();
-    setInstagram();
     setBook();
-
+    setInstagram();
     setReserva();
     // setMap();
 
@@ -55,13 +54,24 @@ function closeBook() {
 function setMenu() {
     var codeMenu = '';
     codeMenu += '<div id="myNav" class="overlay">';
-    codeMenu += '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">CLOSE</a>';
+    codeMenu += '<div class="row row-book">';
+    codeMenu += '    <div class="col-md-8 offset-md-2 col-book">';
+    codeMenu += '        <img src="img/hey-claro.png" alt="#">';
+    codeMenu += '    </div>';
+    codeMenu += '    <div class="col-md-2 col-book">';
+    codeMenu += '        <span style="font-size:14px;cursor:pointer;letter-spacing: 2px; color: white; " onclick="closeNav()">CLOSE</span>';
+    codeMenu += '    </div>';
+    codeMenu += '</div>';
     codeMenu += '<div class="overlay-content">';
-    codeMenu += '<a href="stay.html">Stay</a>';
-    codeMenu += '<a href="f&d.html">Food & Drink</a>';
-    codeMenu += '<a href="servicio.html">Servicios</a>';
-    codeMenu += '<a href="nosotros.html">Nosotros</a>';
-    codeMenu += '<a href="contacto.html">Contacto</a>';
+    codeMenu += '<div class="row row-menu">';
+    codeMenu += '    <div class="col-md-2 offset-md-1"><a href="stay.html">Stay</a><p class="row-menu-sub" href="#">Standar</p><p class="row-menu-sub" href="#">Superior</p></div>';
+    codeMenu += '    <div class="col-md-2 "><a href="f&d.html">Eat & Drink</a><p class="row-menu-sub" href="#">Standar</p><p class="row-menu-sub" href="#">Deluxe</p></div>';
+    codeMenu += '    <div class="col-md-2 offset-md-1"><a href="servicio.html">Servicios</a><p class="row-menu-sub" href="#">Activity</p><p class="row-menu-sub" href="#">Shop</p><p class="row-menu-sub" href="#">Aqua Cyclce</p><p class="row-menu-sub" href="#">Gym</p></div>';
+    codeMenu += '    <div class="col-md-2 offset-md-2 col-menu"><p class="menu-cont" href="nosotros.html">Phone</p><p class="row-menu-sub2" href="#">Deluxe</p><p class="menu-cont" href="nosotros.html">Adress</p><p class="row-menu-sub2" href="#">Muelle de Arriluze, 20, 48992 Getxo, Bizkaia</p></div>';
+    // codeMenu += '    <div class="col-md-2 col-menu"><a href="contacto.html">Contacto</a></div>';
+    codeMenu += '   <div class="col-md-2 offset-md-1"><a href="nosotros.html">Nosotros</a></div>';
+    codeMenu += '   <div class="col-md-2"><a href="contacto.html">Contacto</a></div>';
+    codeMenu += '</div>';
     codeMenu += '</div>';
     codeMenu += '</div>';
 
@@ -192,14 +202,14 @@ function setHeader() {
     codeHeader += '    <div class="row nav-row">';
     codeHeader += ' <nav class="navbar">';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-menu">';
-    codeHeader += '     <span style="color:#faecd3;font-size:14px;cursor:pointer;letter-spacing: 2px; font-weight:bold" onclick="openNav()">&#9776; MENU</span>';
+    codeHeader += '     <span style="color:white;font-size:14px;cursor:pointer;letter-spacing: 2px;" onclick="openNav()">&#9776; MENU</span>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-logo">';
     codeHeader += '                 <a class="nav-a logotit" href="index.html#"><img class="logotit" src="../img/hey-claro.png" alt="logo"></a>';
     codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/fav2.png" alt="logo"></a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-otro">';
-    codeHeader += '       <span style="color:#faecd3;font-size:14px;cursor:pointer;letter-spacing: 2px; font-weight:bold" onclick="openBook()">BOOK NOW</span>';
+    codeHeader += '       <span style="color:white;font-size:14px;cursor:pointer;letter-spacing: 2px;" onclick="openBook()">BOOK NOW</span>';
     codeHeader += '    </div>';
     codeHeader += '</nav>';
     codeHeader += '    </div>';
