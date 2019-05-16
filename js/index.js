@@ -6,10 +6,8 @@ $(document).ready(function() {
     setBook();
     setInstagram();
     setReserva();
-    // setMap();
+    formRoom();
 
-
-    $(".fav2").hide();
 
 
 
@@ -64,7 +62,7 @@ function setMenu() {
     codeMenu += '</div>';
     codeMenu += '<div class="overlay-content">';
     codeMenu += '<div class="row row-menu">';
-    codeMenu += '    <div class="col-md-2 offset-md-1"><a href="stay.html">Stay</a><p class="row-menu-sub" href="#">Standar</p><p class="row-menu-sub" href="#">Superior</p></div>';
+    codeMenu += '    <div class="col-md-2 offset-md-1"><a href="stay.html">Stay</a><p class="row-menu-sub" href="#">Standar</p><p class="row-menu-sub" href="#">Deluxe</p></div>';
     codeMenu += '    <div class="col-md-2 "><a href="f&d.html">Eat & Drink</a><p class="row-menu-sub" href="#">Standar</p><p class="row-menu-sub" href="#">Deluxe</p></div>';
     codeMenu += '    <div class="col-md-2 offset-md-1"><a href="servicio.html">Servicios</a><p class="row-menu-sub" href="#">Activity</p><p class="row-menu-sub" href="#">Shop</p><p class="row-menu-sub" href="#">Aqua Cyclce</p><p class="row-menu-sub" href="#">Gym</p></div>';
     codeMenu += '    <div class="col-md-2 offset-md-2 col-menu"><p class="menu-cont" href="nosotros.html">Phone</p><p class="row-menu-sub2" href="#">Deluxe</p><p class="menu-cont" href="nosotros.html">Adress</p><p class="row-menu-sub2" href="#">Muelle de Arriluze, 20, 48992 Getxo, Bizkaia</p></div>';
@@ -84,18 +82,171 @@ function setMenu() {
     }
 }
 
+function formRoom() {
+    $(".row-table-form").hide();
+    $(".row-book-form").show();
+    $(".pb").css("color", "#ff0458");
+    $(".pt").css("color", "white");
+    $(".st").hide();
+    $(".sb").show();
+}
+
+function formTable() {
+    $(".row-table-form").show();
+    $(".row-book-form").hide();
+    $(".pt").css("color", "#ff0458");
+    $(".pb").css("color", "white");
+    $(".st").show();
+    $(".sb").hide();
+}
+
 function setBook() {
     var codeBook = '';
     codeBook += '<div id="myBook" class="overlay">';
-    // codeBook += '<div class="row book">';
-    // codeBook += '   <div class="col-md-10">';
-    // codeBook += '     <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/favicon.png" alt="logo"></a>';
-    // codeBook += '   </div>';
-    // codeBook += '   <div class="col-md-2">';
-    codeBook += '<a href="javascript:void(0)" class="closebtn" onclick="closeBook()">CLOSE</a>';
-    // codeBook += '   </div>';
+    codeBook += '<div class="row row-book">';
+    codeBook += '    <div class="col-md-8 offset-md-2 col-book">';
+    codeBook += '        <a class="col-book-logo" href="index.html"><img src="img/hey-claro.png" alt="#"></a>';
+    codeBook += '    </div>';
+    codeBook += '    <div class="col-md-2 col-book">';
+    codeBook += '        <span style="font-size:14px;cursor:pointer;letter-spacing: 2px; color: white; " onclick="closeBook()">CLOSE</span>';
+    codeBook += '    </div>';
+    codeBook += '</div>';
     codeBook += '<div class="overlay-content">';
-    codeBook += '<a href="stay.html">RESERVA</a>';
+    codeBook += '<div class="row row-book2">';
+    codeBook += '    <div class="col-md-6 col-book2 animated fadeIn fast">';
+    codeBook += '        <p class="pb" onclick="formRoom()"><span class="sb">-</span> Book a Room</p>';
+    codeBook += '        <p class="pt" onclick="formTable()"><span class="st">-</span> Book a Table</p>';
+    codeBook += '    </div>';
+    codeBook += '    <div class="col-md-6">';
+    codeBook += '        <div class="row row-book-form animated fadeIn fast">';
+    codeBook += '            <div class="col-md-12 col-sm-12 col-lg-12 col-book-form">';
+    codeBook += '                <form action="#" method="post">';
+    codeBook += '                    <div class="form-group mx-sm-3">';
+    codeBook += '                        <label for="inputCheckIn" class="sr-only">Check-In</label>';
+    codeBook += '                        <input type="date" class="form-control" id="checkin" placeholder="Check-In" value="Chek-In">';
+    codeBook += '                    </div>';
+    codeBook += '                    <div class="form-group mx-sm-3">';
+    codeBook += '                        <label for="inputCheckOut" class="sr-only">Check-Out</label>';
+    codeBook += '                        <input type="date" class="form-control" id="checkout" placeholder="Check-Out">';
+    codeBook += '                    </div>';
+    codeBook += '                    <div class="form-group mx-sm-3">';
+    codeBook += '                        <select class="form-control">';
+    codeBook += '                                <option selected value="0">Personas</option>';
+    codeBook += '                                <option value="1">1</option>';
+    codeBook += '                                <option value="2">2</option>';
+    codeBook += '                                <option value="3">4</option>';
+    codeBook += '                                <option value="1">5</option>';
+    codeBook += '                                <option value="2">6</option>';
+    codeBook += '                                <option value="3">7</option>';
+    codeBook += '                                <option value="1">8</option>';
+    codeBook += '                                <option value="2">9</option>';
+    codeBook += '                                <option value="3">10</option>';
+    codeBook += '                            </select>';
+    codeBook += '                    </div>';
+    codeBook += '                    <div class="form-group mx-sm-3">';
+    codeBook += '                        <select class="form-control">';
+    codeBook += '                                <option selected value="0">Niños</option>';
+    codeBook += '                                <option value="1">1</option>';
+    codeBook += '                                <option value="2">2</option>';
+    codeBook += '                                <option value="3">4</option>';
+    codeBook += '                                <option value="1">5</option>';
+    codeBook += '                                <option value="2">6</option>';
+    codeBook += '                                <option value="3">7</option>';
+    codeBook += '                                <option value="1">8</option>';
+    codeBook += '                                <option value="2">9</option>';
+    codeBook += '                                <option value="3">10</option>';
+    codeBook += '                            </select>';
+    codeBook += '                    </div>';
+    codeBook += '                    <div class="form-group mx-sm-3">';
+    codeBook += '                        <select class="form-control">';
+    codeBook += '                                <option selected value="0">Habitaciones</option>';
+    codeBook += '                                <option value="1">1</option>';
+    codeBook += '                                <option value="2">2</option>';
+    codeBook += '                                <option value="3">4</option>';
+    codeBook += '                                <option value="1">5</option>';
+    codeBook += '                                <option value="2">6</option>';
+    codeBook += '                                <option value="3">7</option>';
+    codeBook += '                                <option value="1">8</option>';
+    codeBook += '                                <option value="2">9</option>';
+    codeBook += '                                <option value="3">10</option>';
+    codeBook += '                        </select>';
+    codeBook += '                    </div>';
+    codeBook += '                    <button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
+    codeBook += '                </form>';
+    codeBook += '            </div>';
+    codeBook += '        </div>';
+    codeBook += '<div class="row row-table-form animated fadeIn fast">';
+    codeBook += '      <div class="col-md-12 col-sm-12 col-lg-12 col-table-form">';
+    codeBook += '<form action="#" method="post">';
+    codeBook += '<div class="form-group">';
+    codeBook += '<select class="form-control">';
+    codeBook += '                        <option selected value="0">Personas</option>';
+    codeBook += '                        <option value="1">1</option>';
+    codeBook += '                        <option value="2">2</option>';
+    codeBook += '                        <option value="3">4</option>';
+    codeBook += '                        <option value="4">5</option>';
+    codeBook += '                        <option value="5">6</option>';
+    codeBook += '                        <option value="6">7</option>';
+    codeBook += '                        <option value="7">8</option>';
+    codeBook += '                        <option value="8">9</option>';
+    codeBook += '                        <option value="9">10</option>';
+    codeBook += '                    </select>';
+    codeBook += '</div>';
+    codeBook += '<div class="form-group">';
+    codeBook += '<label for="inputCheckIn" class="sr-only">Check-In</label>';
+    codeBook += '<input type="date" class="form-control" id="checkin" placeholder="Check-In" value"Chek-In">';
+    codeBook += '</div>';
+    codeBook += '<div class="form-group">';
+    codeBook += '<select class="form-control">';
+    codeBook += '                        <option selected value="0">Hora</option>';
+    codeBook += '                        <option value="1">14:00</option>';
+    codeBook += '                        <option value="2">14:15</option>';
+    codeBook += '                        <option value="3">14:30</option>';
+    codeBook += '                        <option value="4">14:45</option>';
+    codeBook += '                        <option value="5">15:00</option>';
+    codeBook += '                        <option value="6">15:15</option>';
+    codeBook += '                        <option value="7">15:30</option>';
+    codeBook += '                        <option value="8">15:45</option>';
+    codeBook += '                        <option value="9">16:00</option>';
+    codeBook += '                        <option value="10">16:15</option>';
+    codeBook += '                        <option value="11">16:30</option>';
+    codeBook += '                        <option value="12">16:45</option>';
+    codeBook += '                        <option value="13">17:00</option>';
+    codeBook += '                        <option value="14">17:15</option>';
+    codeBook += '                        <option value="15">17:30</option>';
+    codeBook += '                        <option value="16">17:45</option>';
+    codeBook += '                        <option value="17">18:00</option>';
+    codeBook += '                        <option value="18">18:15</option>';
+    codeBook += '                        <option value="18">18:30</option>';
+    codeBook += '                        <option value="20">18:45</option>';
+    codeBook += '                        <option value="21">19:00</option>';
+    codeBook += '                        <option value="22">19:15</option>';
+    codeBook += '                        <option value="23">19:30</option>';
+    codeBook += '                        <option value="24">19:45</option>';
+    codeBook += '                        <option value="25">20:00</option>';
+    codeBook += '                        <option value="26">20:15</option>';
+    codeBook += '                        <option value="27">20:30</option>';
+    codeBook += '                        <option value="28">20:45</option>';
+    codeBook += '                        <option value="29">21:00</option>';
+    codeBook += '                        <option value="30">21:15</option>';
+    codeBook += '                        <option value="31">21:30</option>';
+    codeBook += '                        <option value="32">21:45</option>';
+    codeBook += '                        <option value="33">22:00</option>';
+    codeBook += '                        <option value="34">22:15</option>';
+    codeBook += '                        <option value="35">22:30</option>';
+    codeBook += '                        <option value="36">22:45</option>';
+    codeBook += '                        <option value="37">23:00</option>';
+    codeBook += '                        <option value="38">23:15</option>';
+    codeBook += '                        <option value="39">23:30</option>';
+    codeBook += '                    </select>';
+    codeBook += '</div>';
+
+    codeBook += '<button type="submit" class="btn btn-default">RESERVA MESA</button>';
+    codeBook += '</form>';
+    codeBook += '</div>';
+    codeBook += '</div>';
+    codeBook += '    </div>';
+    codeBook += '   </div>';
     codeBook += '</div>';
     codeBook += '</div>';
 
@@ -205,7 +356,7 @@ function setHeader() {
     codeHeader += '     <span style="color:white;font-size:14px;cursor:pointer;letter-spacing: 2px;" onclick="openNav()">&#9776; MENU</span>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-logo">';
-    codeHeader += '                 <a class="nav-a logotit" href="index.html#"><img class="logotit" src="../img/hey-claro.png" alt="logo"></a>';
+    codeHeader += '                 <a class="nav-a logotit" href="index.html"><img class="logotit" src="../img/hey-claro.png" alt="logo"></a>';
     codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/fav2.png" alt="logo"></a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-otro">';

@@ -1,6 +1,12 @@
 $(document).ready(function() {
     setComida();
+    formRoom();
 });
+
+function openTable() {
+    openBook();
+    formTable();
+}
 
 var slideIndex = 1;
 showDivs(slideIndex);
