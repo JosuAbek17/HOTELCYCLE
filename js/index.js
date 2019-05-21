@@ -102,7 +102,7 @@ function formTable() {
 
 function setBook() {
     var codeBook = '';
-    codeBook += '<div id="myBook" class="overlay">';
+    codeBook += '<div id="myBook" class="overlay2">';
     codeBook += '<div class="row row-book">';
     codeBook += '    <div class="col-md-8 offset-md-2 col-book">';
     codeBook += '        <a class="col-book-logo" href="index.html"><img src="img/hey-claro.png" alt="#"></a>';
@@ -111,7 +111,7 @@ function setBook() {
     codeBook += '        <span style="font-size:14px;cursor:pointer;letter-spacing: 2px; color: white; " onclick="closeBook()">CLOSE</span>';
     codeBook += '    </div>';
     codeBook += '</div>';
-    codeBook += '<div class="overlay-content">';
+    codeBook += '<div class="overlay-content2">';
     codeBook += '<div class="row row-book2">';
     codeBook += '    <div class="col-md-6 col-book2 animated fadeIn fast">';
     codeBook += '        <p class="pb" onclick="formRoom()"><span class="sb">-</span> Book a Room</p>';

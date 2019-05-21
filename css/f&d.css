@@ -95,3 +95,7 @@
     border: 0;
     border-right: 1px solid rgba(224, 224, 224, .05) !important;
 }
+
+.col-stay-room-mas a:hover {
+    cursor: pointer;
+}
