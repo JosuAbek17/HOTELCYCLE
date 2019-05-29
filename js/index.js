@@ -408,12 +408,6 @@ function setFooter() {
     codeFooter += '<p>XXXXX 2019. ALL RIGHTS RESERVED</p>';
     codeFooter += '</div>';
     codeFooter += '</div>';
-    codeFooter += '<div class="row foot-row copy">';
-    codeFooter += '<div class="col-md-12 col-sm-12 foot-col">';
-    codeFooter += '<p>PRIVACY POLICY | TERMS AND CONDITIONS | COMPANY NO. 06552505</p>';
-    codeFooter += '</div>';
-    codeFooter += '</div>';
-
 
     try {
         document.getElementsByTagName('footer')[0].innerHTML = codeFooter;
