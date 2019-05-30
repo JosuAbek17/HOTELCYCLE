@@ -26,6 +26,7 @@
     background-image: url("../img/relax.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     font-size: 18px;
     width: 100%;
     height: 550px;
