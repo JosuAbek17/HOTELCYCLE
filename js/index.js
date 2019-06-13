@@ -100,6 +100,11 @@ function formTable() {
     $(".sb").hide();
 }
 
+function openRoom() {
+    openBook();
+    formRoom();
+}
+
 function setBook() {
     var codeBook = '';
     codeBook += '<div id="myBook" class="overlay2">';
@@ -131,16 +136,12 @@ function setBook() {
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
     codeBook += '                        <select class="form-control">';
-    codeBook += '                                <option selected value="0">Personas</option>';
+    codeBook += '                                <option selected value="0">Adultos</option>';
     codeBook += '                                <option value="1">1</option>';
     codeBook += '                                <option value="2">2</option>';
     codeBook += '                                <option value="3">4</option>';
-    codeBook += '                                <option value="1">5</option>';
-    codeBook += '                                <option value="2">6</option>';
-    codeBook += '                                <option value="3">7</option>';
-    codeBook += '                                <option value="1">8</option>';
-    codeBook += '                                <option value="2">9</option>';
-    codeBook += '                                <option value="3">10</option>';
+    codeBook += '                                <option value="4">5</option>';
+    codeBook += '                                <option value="5">6</option>';
     codeBook += '                            </select>';
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
@@ -149,12 +150,8 @@ function setBook() {
     codeBook += '                                <option value="1">1</option>';
     codeBook += '                                <option value="2">2</option>';
     codeBook += '                                <option value="3">4</option>';
-    codeBook += '                                <option value="1">5</option>';
-    codeBook += '                                <option value="2">6</option>';
-    codeBook += '                                <option value="3">7</option>';
-    codeBook += '                                <option value="1">8</option>';
-    codeBook += '                                <option value="2">9</option>';
-    codeBook += '                                <option value="3">10</option>';
+    codeBook += '                                <option value="4">5</option>';
+    codeBook += '                                <option value="5">6</option>';
     codeBook += '                            </select>';
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
@@ -163,15 +160,9 @@ function setBook() {
     codeBook += '                                <option value="1">1</option>';
     codeBook += '                                <option value="2">2</option>';
     codeBook += '                                <option value="3">4</option>';
-    codeBook += '                                <option value="1">5</option>';
-    codeBook += '                                <option value="2">6</option>';
-    codeBook += '                                <option value="3">7</option>';
-    codeBook += '                                <option value="1">8</option>';
-    codeBook += '                                <option value="2">9</option>';
-    codeBook += '                                <option value="3">10</option>';
     codeBook += '                        </select>';
     codeBook += '                    </div>';
-    codeBook += '                    <button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
+    codeBook += '                    <a href="reserva.html"><button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button></a>';
     codeBook += '                </form>';
     codeBook += '            </div>';
     codeBook += '        </div>';
@@ -274,16 +265,12 @@ function setReserva() {
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<select class="form-control">';
-    codeReserva += '                        <option selected value="0">Personas</option>';
+    codeReserva += '                        <option selected value="0">Adultos</option>';
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
     codeReserva += '                        <option value="3">4</option>';
-    codeReserva += '                        <option value="1">5</option>';
-    codeReserva += '                        <option value="2">6</option>';
-    codeReserva += '                        <option value="3">7</option>';
-    codeReserva += '                        <option value="1">8</option>';
-    codeReserva += '                        <option value="2">9</option>';
-    codeReserva += '                        <option value="3">10</option>';
+    codeReserva += '                        <option value="4">5</option>';
+    codeReserva += '                        <option value="5">6</option>';
     codeReserva += '                    </select>';
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
@@ -292,12 +279,8 @@ function setReserva() {
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
     codeReserva += '                        <option value="3">4</option>';
-    codeReserva += '                        <option value="1">5</option>';
-    codeReserva += '                        <option value="2">6</option>';
-    codeReserva += '                        <option value="3">7</option>';
-    codeReserva += '                        <option value="1">8</option>';
-    codeReserva += '                        <option value="2">9</option>';
-    codeReserva += '                        <option value="3">10</option>';
+    codeReserva += '                        <option value="4">5</option>';
+    codeReserva += '                        <option value="5">6</option>';
     codeReserva += '                    </select>';
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
@@ -305,17 +288,11 @@ function setReserva() {
     codeReserva += '                        <option selected value="0">Habitaciones</option>';
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
-    codeReserva += '                        <option value="3">4</option>';
-    codeReserva += '                        <option value="1">5</option>';
-    codeReserva += '                        <option value="2">6</option>';
-    codeReserva += '                        <option value="3">7</option>';
-    codeReserva += '                        <option value="1">8</option>';
-    codeReserva += '                        <option value="2">9</option>';
-    codeReserva += '                        <option value="3">10</option>';
+    codeReserva += '                        <option value="3">3</option>';
     codeReserva += '            </select>';
     codeReserva += '</div>';
 
-    codeReserva += '<button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
+    codeReserva += '<button onclick="window.location.href("resrva.html");" type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
 
     codeReserva += '</form>';
     codeReserva += '</div>';

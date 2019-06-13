@@ -12,28 +12,24 @@
 
 .serv1 {
     background-position: bottom;
-    background-attachment: fixed;
     background-size: cover;
     background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/dining-area-sea-containers-food-drink.jpg");
 }
 
 .serv2 {
     background-position: top;
-    background-attachment: fixed;
     background-size: cover;
     background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/sea-container-restaurant_.png");
 }
 
 .serv3 {
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/Rumpus-Room-September-2018-44-e1553529121593.jpg");
 }
 
 .serv4 {
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/breakfast-sea-containers.png");
 }

@@ -16,24 +16,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-    <script>
-        window.addEventListener("load", function() {
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": {
-                        "background": "#10253d",
-                        "text": "#fff"
-                    },
-                    "button": {
-                        "background": "#ff0458"
-                    }
-                },
-                "showLink": false,
-                "position": "bottom-right"
-            })
-        });
-    </script>
 
     <title>Home | Hotel Cycle</title>
 </head>
@@ -52,7 +34,7 @@
             <div class="col-md-12 col-sm-12 col-lg-12 col-home">
                 <h1>Hotel Cycle</h1>
                 <p>A space to unwind, recharge and regroup, each of our guest rooms are the ideal South Bank base from which to explore London.Whether you opt for one of our standard room.</p>
-                <button type="submit" class="btn btn-default">BOOK NOW</button>
+                <a href="reserva.html"><button type="submit" class="btn btn-default">BOOK NOW</button></a>
             </div>
         </div>
 
@@ -180,6 +162,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#10253d",
+                        "text": "#fff"
+                    },
+                    "button": {
+                        "background": "#ff0458"
+                    }
+                },
+                "showLink": false,
+                "position": "bottom-right"
+            })
+        });
+    </script>
 </body>
 
 </html>
