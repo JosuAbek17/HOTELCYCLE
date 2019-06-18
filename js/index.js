@@ -292,7 +292,7 @@ function setReserva() {
     codeReserva += '            </select>';
     codeReserva += '</div>';
 
-    codeReserva += '<button onclick="window.location.href("resrva.html");" type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
+    codeReserva += '<button onclick="window.location.href("reserva.html");" type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
 
     codeReserva += '</form>';
     codeReserva += '</div>';
