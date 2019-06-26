@@ -10,9 +10,9 @@ $(document).ready(function() {
 
 function setContacto() {
     var codeContact = '';
-    codeContact += '<div class="row row-cont">';
+    codeContact += '<div class="row row-cont2">';
     codeContact += '      <div class="col-md-12 col-sm-12 col-lg-12 col-cont">';
-    codeContact += '<form class="form-inline" action="#" method="post">';
+    codeContact += '<form class="form-inline f-c" action="#" method="post">';
     codeContact += '<div class="form-group">';
     codeContact += '<input type="text" class="form-control" id="nombre" placeholder="Nombre">';
     codeContact += '</div>';

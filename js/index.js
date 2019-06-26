@@ -13,6 +13,23 @@ $(document).ready(function() {
 
 });
 
+function validarRoom() {
+
+    var hoy = new Date();
+    var checkin = $("#checkin").val();
+    var checkout = $("#checkout").val();
+
+    if (checkin > hoy) {
+        alert("Seleccione un Check-In valido")
+        return false;
+    }
+
+    if (checkout > checkin) {
+        alert("Seleccione un Check-Out valido")
+        return false;
+    }
+
+}
 
 $(document).on("scroll", function() {
     if ($(document).scrollTop() > 200) {
@@ -125,7 +142,7 @@ function setBook() {
     codeBook += '    <div class="col-md-6">';
     codeBook += '        <div class="row row-book-form animated fadeIn fast">';
     codeBook += '            <div class="col-md-12 col-sm-12 col-lg-12 col-book-form">';
-    codeBook += '                <form action="#" method="post">';
+    codeBook += '                <form class="form-mobile" action="#" method="post">';
     codeBook += '                    <div class="form-group mx-sm-3">';
     codeBook += '                        <label for="inputCheckIn" class="sr-only">Check-In</label>';
     codeBook += '                        <input type="date" class="form-control" id="checkin" placeholder="Check-In" value="Chek-In">';
@@ -160,13 +177,13 @@ function setBook() {
     codeBook += '                                <option value="3">3</option>';
     codeBook += '                        </select>';
     codeBook += '                    </div>';
-    codeBook += '                    <a href="reserva.html"><button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button></a>';
+    codeBook += '                    <button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
     codeBook += '                </form>';
     codeBook += '            </div>';
     codeBook += '        </div>';
     codeBook += '<div class="row row-table-form animated fadeIn fast">';
     codeBook += '      <div class="col-md-12 col-sm-12 col-lg-12 col-table-form">';
-    codeBook += '<form action="#" method="post">';
+    codeBook += '<form class="form-mobile" action="#" method="post">';
     codeBook += '<div class="form-group">';
     codeBook += '<select class="form-control">';
     codeBook += '                        <option selected value="0">Personas</option>';
@@ -252,7 +269,7 @@ function setReserva() {
     var codeReserva = '';
     codeReserva += '<div class="row row-stay-form">';
     codeReserva += '      <div class="col-md-12 col-sm-12 col-lg-12 col-stay-form">';
-    codeReserva += '<form class="form-inline" action="#" method="post">';
+    codeReserva += '<form class="form-inline" action="#" method="post" onsubmit="return validarRoom()">';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<label for="inputCheckIn" class="sr-only">Check-In</label>';
     codeReserva += '<input type="date" class="form-control" id="checkin" placeholder="Check-In" value"Chek-In">';
@@ -262,7 +279,7 @@ function setReserva() {
     codeReserva += '<input type="date" class="form-control" id="checkout" placeholder="Check-Out">';
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
-    codeReserva += '<select class="form-control">';
+    codeReserva += '<select id="personas" class="form-control">';
     codeReserva += '                        <option selected value="0">Personas</option>';
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
@@ -273,14 +290,14 @@ function setReserva() {
     codeReserva += '                    </select>';
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
-    codeReserva += '    <select class="form-control">';
+    codeReserva += '    <select id="tipo" class="form-control">';
     codeReserva += '                        <option selected value="0">Tipo</option>';
     codeReserva += '                        <option value="Standar">Standar</option>';
     codeReserva += '                        <option value="Deluxe">Deluxe</option>';
     codeReserva += '                    </select>';
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
-    codeReserva += '    <select class="form-control">';
+    codeReserva += '    <select id="nhab" class="form-control">';
     codeReserva += '                        <option selected value="0">Habitaciones</option>';
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
@@ -288,7 +305,7 @@ function setReserva() {
     codeReserva += '            </select>';
     codeReserva += '</div>';
 
-    codeReserva += '<button onclick="window.location.href("reserva.html");" type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
+    codeReserva += '<button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
 
     codeReserva += '</form>';
     codeReserva += '</div>';
@@ -325,8 +342,12 @@ function setHeader() {
     var codeHeader = '';
     codeHeader += '    <div class="row nav-row">';
     codeHeader += ' <nav class="navbar">';
+    codeHeader += '    <div class="col-md-10 col-sm-10 col-xs-10 nav-col-logo-mobile">';
+    codeHeader += ' <a class="nav-a fav2-mobile" href="index.html#"><img class="fav2-mobile" src="../img/fav2.png" alt="logo"></a>';
+    codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-menu">';
-    codeHeader += '     <span style="color:white;font-size:14px;cursor:pointer;letter-spacing: 2px;" onclick="openNav()">&#9776; MENU</span>';
+    codeHeader += '     <span class="web" style="color:white;font-size:14px;cursor:pointer;letter-spacing: 2px;" onclick="openNav()">&#9776; MENU</span>';
+    codeHeader += '     <span class="mobile" style="color:white;font-size:22px;cursor:pointer;letter-spacing: 2px;" onclick="openNav()">&#9776;</span>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-8 col-sm-8 nav-col-logo">';
     codeHeader += '                 <a class="nav-a logotit" href="index.html"><img class="logotit" src="../img/hey-claro.png" alt="logo"></a>';

@@ -45,9 +45,10 @@ body {
 }
 
 .col-home button:hover {
-    color: white;
-    border: solid 1px white;
-    background-color: transparent;
+    color: #ff0458;
+    font-weight: bold;
+    border: solid 1px #10253d;
+    background-color: #10253d;
 }
 
 .row-home {
@@ -234,10 +235,6 @@ menu {
     text-align: center;
     padding: 50px;
     background-color: #10253d;
-}
-
-.form-group {
-    margin: 0 !important;
 }
 
 .col-stay-form select {
@@ -884,6 +881,10 @@ header.small {
     width: 30px;
 }
 
+.mobile {
+    display: none;
+}
+
 .navbar-brand {
     height: auto;
 }
@@ -1318,6 +1319,10 @@ left: 0; */
     border-radius: 0;
 }
 
+.nav-col-logo-mobile {
+    display: none;
+}
+
 .col-book-form button:hover {
     background-color: #ff0458;
     color: white;
@@ -1379,4 +1384,206 @@ left: 0; */
 
 .col-book-logo img {
     width: 230px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:400px) {
+    .logotit {
+        display: none;
+    }
+    .web {
+        display: none;
+    }
+    .mobile {
+        display: inline;
+    }
+    .col-stay-form {
+        display: none;
+    }
+    .col-home p {
+        display: none;
+    }
+    .nav-col-otro {
+        display: none;
+    }
+    .col-home {
+        top: 55%;
+    }
+    .row-index-cita {
+        padding: 5px;
+        font-size: 10px;
+    }
+    .hr {
+        margin: 20px;
+    }
+    .mySlides,
+    .mySlides2,
+    .mySlides4 {
+        height: 500px;
+    }
+    .row-stay-room,
+    .row-stay-food,
+    .row-stay-act {
+        height: 500px;
+    }
+    .col-stay-room h3,
+    .col-stay-food h3,
+    .col-stay-act h3 {
+        display: none;
+    }
+    .alone,
+    .insta4,
+    .insta5,
+    .social,
+    .info,
+    .copy,
+    .p2,
+    .col-menu,
+    .col-book img,
+    .row-menu p,
+    .nav-col-logo,
+    .logotit,
+    .serv-hr,
+    .col-cont,
+    .col-relaxt h5,
+    .relax-cont {
+        display: none;
+    }
+    .row-stay-food-desc,
+    .row-stay-room-desc,
+    .row-stay-act-desc,
+    .row-stay-desc {
+        padding: 40px;
+    }
+    .wow h2 {
+        font-size: 24px;
+    }
+    .row-menu {
+        margin: 0;
+    }
+    .overlay a {
+        text-align: center;
+        opacity: 1;
+        max-width: 200px;
+        margin: auto;
+    }
+    .col-book {
+        margin-right: 5px;
+        line-height: 70px;
+        text-align: right;
+    }
+    .header {
+        height: 70px;
+    }
+    .nav-col-logo-mobile {
+        display: block;
+    }
+    .nav-col-menu {
+        text-align: right;
+        width: auto;
+    }
+    .row-book2 {
+        text-align: center;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .col-book2 {
+        text-align: center;
+        width: 100%;
+        padding: 0 !important;
+        margin: auto !important;
+    }
+    .pb {
+        font-size: 24px !important;
+        width: 200px !important;
+        margin: a !important;
+        padding: 10px !important;
+    }
+    .pt {
+        font-size: 24px !important;
+        width: 200px !important;
+        margin: auto !important;
+        padding: 10px !important;
+    }
+    .form-mobile input {
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 0 !important;
+    }
+    .form-mobile select {
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 0 !important;
+    }
+    .form-mobile button {
+        float: none;
+        text-align: center !important;
+        max-width: 200px !important;
+        width: 100% !important;
+        font-size: 12px;
+        margin: auto !important;
+        padding: 0 !important;
+    }
+    .col-book-form {
+        padding: 0 10px;
+    }
+    .form-group {
+        width: 200px;
+        margin: auto !important;
+    }
+    .row-rooms img {
+        height: 250px !important;
+    }
+    .col-book {
+        margin-right: 15px;
+    }
+    .row-header {
+        margin: 0;
+        height: 70px !important;
+    }
+    .row-relax1,
+    .row-relax2,
+    .row-relax3,
+    .row-relax4 {
+        height: auto !important;
+        padding: 10px !important;
+    }
+    .col-relax1,
+    .col-relax2,
+    .col-relax3,
+    .col-relax4 {
+        padding: 5px !important;
+        height: 250px;
+        margin: 0px !important;
+    }
+    .col-relaxt {
+        margin: 0 !important;
+        padding: 0 5px !important;
+    }
+    .col-relaxt h4 {
+        padding: 0 0 20px 0 !important;
+        text-align: center;
+    }
+    .col-relaxt p {
+        text-align: center;
+        font-size: 12px !important;
+    }
+    .row-hotel {
+        padding: 30px 10px !important;
+    }
+    .col-hotel p {
+        font-size: 14px !important;
+    }
+    .col-us-4-img1,
+    .col-us-4-img2 {
+        height: 300px !important;
+    }
+    .col-us-4-blue,
+    .col-us-4-white {
+        line-height: 22px !important;
+        font-size: 14px !important;
+        padding: 40px !important;
+    }
 }

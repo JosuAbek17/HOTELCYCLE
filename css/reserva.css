@@ -40,7 +40,7 @@
 .col-datos {}
 
 .pago {
-    margin: 20px 15px 0px 15px;
+    margin: 20px 15px 0px 15px !important;
     float: left;
     font-weight: bold;
     color: #ff0458;
