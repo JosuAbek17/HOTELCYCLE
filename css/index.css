@@ -527,6 +527,10 @@ color: #ff0458;
     background-image: url("../img/shop2.jpg");
 }
 
+.form-group {
+    margin: 0 !important;
+}
+
 .shop3 {
     background-position: center;
     background-size: cover;
