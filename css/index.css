@@ -1590,4 +1590,60 @@ left: 0; */
         font-size: 14px !important;
         padding: 40px !important;
     }
+    .row-serv {
+        width: 100%;
+        margin: 0;
+    }
+    .row-title {
+        width: 100%;
+        margin: 0;
+    }
+    /* RESERVA */
+    .row-datos {
+        padding: 0;
+        width: auto;
+        margin: auto;
+        top: 20%;
+        left: 50%;
+    }
+    .col-reserva {
+        padding: 0;
+    }
+    .col-datos {
+        padding: 0;
+    }
+    .row-datos h2 {
+        font-size: 16px;
+    }
+    .fm-rs {
+        width: 100%;
+    }
+    .fm-rs div {
+        width: 100px;
+        margin: 0 5px !important;
+    }
+    .fm-rs label {
+        display: none;
+    }
+    .fm-rs input {
+        text-align: center;
+        margin: 15px 5px;
+        padding: 5px;
+    }
+    .col-reserva form {
+        margin: auto;
+        width: 100%;
+        left: 50%;
+    }
+    .pago {
+        margin-left: 10px !important;
+        width: 100px;
+    }
+    .table {
+        top: 30%;
+        left: 50%;
+    }
+    .reserva form {
+        width: 100%;
+    }
 }

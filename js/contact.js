@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    setContacto();
     setMap();
     formRoom();
 
