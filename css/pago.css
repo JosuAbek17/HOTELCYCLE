@@ -22,6 +22,11 @@ form {
     -webkit-transform: translate(-50%, -50%);
 }
 
+#exp_y,
+#exp_m {
+    height: 34px;
+}
+
 img {
     width: 50px;
     padding: 0;

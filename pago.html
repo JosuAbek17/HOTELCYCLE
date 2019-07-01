@@ -28,27 +28,28 @@
     <menu></menu>
     <book></book>
     <div class="container-fluid reserva">
-        <form action="#" class="credit-card-div">
+        <form action="index.html" method="post" class="credit-card-div" id="paymentForm" onsubmit="return cardFormValidate()">
             <div class="panel panel-default">
                 <div class="panel-heading">
 
                     <div class="row ">
                         <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="Enter Card Number" />
+                            <input id="card_number" type="text" class="form-control" placeholder="Enter Card Number" required/>
                         </div>
                     </div>
                     <div class="row ">
                         <div class="col-md-3 col-sm-3 col-xs-3">
                             <span class="help-block text-muted small-font"> Expiry Month</span>
-                            <input type="text" class="form-control" placeholder="MM" />
+                            <input id="exp_m" type="text" class="form-control" placeholder="MM" required/>
+
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-3">
                             <span class="help-block text-muted small-font">  Expiry Year</span>
-                            <input type="text" class="form-control" placeholder="YY" />
+                            <input id="exp_y" type="text" class="form-control" placeholder="YY" required/>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-3">
                             <span class="help-block text-muted small-font">  CCV</span>
-                            <input type="text" class="form-control" placeholder="CCV" />
+                            <input id="cvv" type="text" class="form-control" placeholder="CCV" required/>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-3">
                             <img src="img/tarjetas.png" />
@@ -57,7 +58,7 @@
                     <div class="row ">
                         <div class="col-md-12 pad-adjust">
 
-                            <input type="text" class="form-control" placeholder="Name On The Card" />
+                            <input id="card_name" type="text" class="form-control" placeholder="Name On The Card" required/>
                         </div>
                     </div>
                     <div class="row">

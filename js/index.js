@@ -16,20 +16,68 @@ $(document).ready(function() {
 function validarRoom() {
 
     var hoy = new Date();
+    console.log(hoy);
     var checkin = $("#checkin").val();
+    console.log(checkin);
     var checkout = $("#checkout").val();
-
-    if (checkin > hoy) {
+    console.log(checkout);
+    var parsein = Date.parse(checkin);
+    console.log(parsein);
+    var parseout = Date.parse(checkout);
+    var personas = $("#personas").val();
+    var tipo = $("#tipo").val();
+    var nhab = $("#nhab").val();
+    if (parsein <= hoy) {
         alert("Seleccione un Check-In valido")
         return false;
     }
-
-    if (checkout > checkin) {
+    if (parseout <= parsein) {
         alert("Seleccione un Check-Out valido")
         return false;
     }
 
-}
+    if (personas == 0) {
+        alert("Seleccione el numero de personas")
+        return false;
+    }
+
+    if (tipo == 0) {
+        alert("Seleccione el tipo de habitación")
+        return false;
+    }
+
+    if (nhab == 0) {
+        alert("Seleccione el número de habitaciones")
+        return false;
+    }
+    return true;
+
+};
+
+function validarTable() {
+    var hora = $("#tablehour").val();
+    var hoy = new Date();
+    var checkin = $("#checkint").val();
+    var parsein = Date.parse(checkin);
+    var personast = $("#personast").val();
+    if (personast == 0) {
+        alert("Seleccione el numero de peras")
+        return false;
+    }
+
+    if (parsein <= hoy) {
+        alert("Seleccione un Check-In valido")
+        return false;
+    }
+
+    if (hora == 0) {
+        alert("Seleccione la hora")
+        return false;
+    }
+    return true;
+
+};
+
 
 $(document).on("scroll", function() {
     if ($(document).scrollTop() > 200) {
@@ -142,17 +190,17 @@ function setBook() {
     codeBook += '    <div class="col-md-6">';
     codeBook += '        <div class="row row-book-form animated fadeIn fast">';
     codeBook += '            <div class="col-md-12 col-sm-12 col-lg-12 col-book-form">';
-    codeBook += '                <form class="form-mobile" action="#" method="post">';
+    codeBook += '                <form class="form-mobile" action="reservaR.html" method="post" onsubmit="return validarRoom()">';
     codeBook += '                    <div class="form-group mx-sm-3">';
     codeBook += '                        <label for="inputCheckIn" class="sr-only">Check-In</label>';
-    codeBook += '                        <input type="date" class="form-control" id="checkin" placeholder="Check-In" value="Chek-In">';
+    codeBook += '                        <input type="date" class="form-control" id="checkin" placeholder="Check-In" value="Chek-In" required>';
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
     codeBook += '                        <label for="inputCheckOut" class="sr-only">Check-Out</label>';
-    codeBook += '                        <input type="date" class="form-control" id="checkout" placeholder="Check-Out">';
+    codeBook += '                        <input type="date" class="form-control" id="checkout" placeholder="Check-Out" required>';
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
-    codeBook += '                        <select class="form-control">';
+    codeBook += '                        <select id="personas" class="form-control" required>';
     codeBook += '                                <option selected value="0">Personas</option>';
     codeBook += '                                <option value="1">1</option>';
     codeBook += '                                <option value="2">2</option>';
@@ -163,14 +211,14 @@ function setBook() {
     codeBook += '                            </select>';
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
-    codeBook += '                        <select class="form-control">';
+    codeBook += '                        <select id="tipo" class="form-control" required>';
     codeBook += '                                <option selected value="0">Tipo</option>';
     codeBook += '                                <option value="Standar">Standar</option>';
     codeBook += '                                <option value="Deluxe">Deluxe</option>';
     codeBook += '                            </select>';
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
-    codeBook += '                        <select class="form-control">';
+    codeBook += '                        <select id="nhab" class="form-control" required>';
     codeBook += '                                <option selected value="0">Habitaciones</option>';
     codeBook += '                                <option value="1">1</option>';
     codeBook += '                                <option value="2">2</option>';
@@ -183,9 +231,9 @@ function setBook() {
     codeBook += '        </div>';
     codeBook += '<div class="row row-table-form animated fadeIn fast">';
     codeBook += '      <div class="col-md-12 col-sm-12 col-lg-12 col-table-form">';
-    codeBook += '<form class="form-mobile" action="#" method="post">';
+    codeBook += '<form class="form-mobile" action="reservaR.html" method="post" onsubmit="return validarTable()">';
     codeBook += '<div class="form-group">';
-    codeBook += '<select class="form-control">';
+    codeBook += '<select id="personast" class="form-control" required>';
     codeBook += '                        <option selected value="0">Personas</option>';
     codeBook += '                        <option value="1">1</option>';
     codeBook += '                        <option value="2">2</option>';
@@ -200,10 +248,10 @@ function setBook() {
     codeBook += '</div>';
     codeBook += '<div class="form-group">';
     codeBook += '<label for="inputCheckIn" class="sr-only">Check-In</label>';
-    codeBook += '<input type="date" class="form-control" id="checkin" placeholder="Check-In" value"Chek-In">';
+    codeBook += '<input type="date" class="form-control" id="checkint" placeholder="Check-In" value"Chek-In" required>';
     codeBook += '</div>';
     codeBook += '<div class="form-group">';
-    codeBook += '<select class="form-control">';
+    codeBook += '<select id="tablehour" class="form-control" required>';
     codeBook += '                        <option selected value="0">Hora</option>';
     codeBook += '                        <option value="1">14:00</option>';
     codeBook += '                        <option value="2">14:15</option>';
@@ -269,7 +317,7 @@ function setReserva() {
     var codeReserva = '';
     codeReserva += '<div class="row row-stay-form">';
     codeReserva += '      <div class="col-md-12 col-sm-12 col-lg-12 col-stay-form">';
-    codeReserva += '<form class="form-inline" action="#" method="post" onsubmit="return validarRoom()">';
+    codeReserva += '<form class="form-inline" action="reservaR.html" method="post" onsubmit="return validarRoom()">';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<label for="inputCheckIn" class="sr-only">Check-In</label>';
     codeReserva += '<input type="date" class="form-control" id="checkin" placeholder="Check-In" value"Chek-In">';

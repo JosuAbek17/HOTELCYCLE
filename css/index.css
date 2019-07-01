@@ -47,7 +47,7 @@ body {
 .col-home button:hover {
     color: #ff0458;
     font-weight: bold;
-    border: solid 1px #10253d;
+    border: solid 1px #ff0458;
     background-color: #10253d;
 }
 
@@ -1645,5 +1645,8 @@ left: 0; */
     }
     .reserva form {
         width: 100%;
+    }
+    .row-rooms {
+        text-align: center;
     }
 }
