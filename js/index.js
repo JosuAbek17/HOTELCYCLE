@@ -25,8 +25,11 @@ function validarRoom() {
     console.log(parsein);
     var parseout = Date.parse(checkout);
     var personas = $("#personas").val();
+    console.log(personas);
     var tipo = $("#tipo").val();
+    console.log(tipo);
     var nhab = $("#nhab").val();
+    console.log(nhab);
     if (parsein <= hoy) {
         alert("Seleccione un Check-In valido")
         return false;
@@ -52,7 +55,49 @@ function validarRoom() {
     }
     return true;
 
-};
+}
+
+function validarRoom2() {
+    var hoy2 = new Date();
+    console.log(hoy2);
+    var checkin2 = $("#checkin2").val();
+    console.log(checkin2);
+    var checkout2 = $("#checkout2").val();
+    console.log(checkout2);
+    var parsein2 = Date.parse(checkin2);
+    console.log(parsein2);
+    var parseout2 = Date.parse(checkout2);
+    var personas2 = $("#personas2").val();
+    console.log(personas2);
+    var tipo2 = $("#tipo2").val();
+    console.log(tipo2);
+    var nhab2 = $("#nhab2").val();
+    console.log(nhab2);
+    if (parsein2 <= hoy2) {
+        alert("Seleccione un Check-In valido")
+        return false;
+    }
+    if (parseout2 <= parsein2) {
+        alert("Seleccione un Check-Out valido")
+        return false;
+    }
+
+    if (personas2 == 0) {
+        alert("Seleccione el numero de personas")
+        return false;
+    }
+
+    if (tipo2 == 0) {
+        alert("Seleccione el tipo de habitación")
+        return false;
+    }
+
+    if (nhab2 == 0) {
+        alert("Seleccione el número de habitaciones")
+        return false;
+    }
+    return true;
+}
 
 function validarTable() {
     var hora = $("#tablehour").val();
@@ -61,7 +106,7 @@ function validarTable() {
     var parsein = Date.parse(checkin);
     var personast = $("#personast").val();
     if (personast == 0) {
-        alert("Seleccione el numero de peras")
+        alert("Seleccione el numero de personas")
         return false;
     }
 
@@ -76,7 +121,31 @@ function validarTable() {
     }
     return true;
 
-};
+}
+
+function validarTable2() {
+    var hora = $("#tablehour2").val();
+    var hoy = new Date();
+    var checkin = $("#checkint2").val();
+    var parsein = Date.parse(checkin);
+    var personast = $("#personast2").val();
+    if (personast == 0) {
+        alert("Seleccione el numero de personas")
+        return false;
+    }
+
+    if (parsein <= hoy) {
+        alert("Seleccione un Check-In valido")
+        return false;
+    }
+
+    if (hora == 0) {
+        alert("Seleccione la hora")
+        return false;
+    }
+    return true;
+
+}
 
 
 $(document).on("scroll", function() {
@@ -122,15 +191,15 @@ function setMenu() {
     codeMenu += '        <img src="img/hey-claro.png" alt="#">';
     codeMenu += '    </div>';
     codeMenu += '    <div class="col-md-2 col-book">';
-    codeMenu += '        <span style="font-size:14px;cursor:pointer;letter-spacing: 2px; color: white; " onclick="closeNav()">CLOSE</span>';
+    codeMenu += '        <span style="font-size:14px;cursor:pointer;letter-spacing: 2px; color: white; " onclick="closeNav()">CERRAR</span>';
     codeMenu += '    </div>';
     codeMenu += '</div>';
     codeMenu += '<div class="overlay-content">';
     codeMenu += '<div class="row row-menu">';
-    codeMenu += '    <div class="col-md-2 offset-md-1"><a href="stay.html">Stay</a><p class="row-menu-sub" href="#">Standar</p><p class="row-menu-sub" href="#">Deluxe</p></div>';
-    codeMenu += '    <div class="col-md-2 "><a href="f&d.html">Eat & Drink</a><p class="row-menu-sub" href="#">Standar</p><p class="row-menu-sub" href="#">Deluxe</p></div>';
-    codeMenu += '    <div class="col-md-2 offset-md-1"><a href="servicio.html">Servicios</a><p class="row-menu-sub" href="#">Activity</p><p class="row-menu-sub" href="#">Shop</p><p class="row-menu-sub" href="#">Aqua Cyclce</p><p class="row-menu-sub" href="#">Gym</p></div>';
-    codeMenu += '    <div class="col-md-2 offset-md-2 col-menu"><p class="menu-cont" href="nosotros.html">Phone</p><p class="row-menu-sub2" href="#">Deluxe</p><p class="menu-cont" href="nosotros.html">Adress</p><p class="row-menu-sub2" href="#">Muelle de Arriluze, 20, 48992 Getxo, Bizkaia</p></div>';
+    codeMenu += '    <div class="col-md-2 offset-md-1"><a href="stay.html">Habitaciones</a><p class="row-menu-sub" href="#">Standar</p><p class="row-menu-sub" href="#">Deluxe</p></div>';
+    codeMenu += '    <div class="col-md-2 "><a href="f&d.html">Food & Drink</a><p class="row-menu-sub" href="#">Restaurante</p><p class="row-menu-sub" href="#">Bar</p></div>';
+    codeMenu += '    <div class="col-md-2 offset-md-1"><a href="servicio.html">Servicios</a><p class="row-menu-sub" href="#">Bici-Ruta</p><p class="row-menu-sub" href="#">Tienda</p><p class="row-menu-sub" href="#">Aqua Cyclce</p><p class="row-menu-sub" href="#">Gym</p></div>';
+    codeMenu += '    <div class="col-md-2 offset-md-2 col-menu"><p class="menu-cont" href="nosotros.html">Teléfono</p><p class="row-menu-sub2" href="#">+34 656 798 980</p><p class="menu-cont" href="nosotros.html">Dirección</p><p class="row-menu-sub2" href="#">Muelle de Arriluze, 20, 48992 Getxo, Bizkaia</p></div>';
     // codeMenu += '    <div class="col-md-2 col-menu"><a href="contacto.html">Contacto</a></div>';
     codeMenu += '   <div class="col-md-2 offset-md-1"><a href="nosotros.html">Nosotros</a></div>';
     codeMenu += '   <div class="col-md-2"><a href="contacto.html">Contacto</a></div>';
@@ -178,14 +247,14 @@ function setBook() {
     codeBook += '        <a class="col-book-logo" href="index.html"><img src="img/hey-claro.png" alt="#"></a>';
     codeBook += '    </div>';
     codeBook += '    <div class="col-md-2 col-book">';
-    codeBook += '        <span style="font-size:14px;cursor:pointer;letter-spacing: 2px; color: white; " onclick="closeBook()">CLOSE</span>';
+    codeBook += '        <span style="font-size:14px;cursor:pointer;letter-spacing: 2px; color: white; " onclick="closeBook()">CERRAR</span>';
     codeBook += '    </div>';
     codeBook += '</div>';
     codeBook += '<div class="overlay-content2">';
     codeBook += '<div class="row row-book2">';
     codeBook += '    <div class="col-md-6 col-book2 animated fadeIn fast">';
-    codeBook += '        <p class="pb" onclick="formRoom()"><span class="sb">-</span> Book a Room</p>';
-    codeBook += '        <p class="pt" onclick="formTable()"><span class="st">-</span> Book a Table</p>';
+    codeBook += '        <p class="pb" onclick="formRoom()"><span class="sb">-</span> Habitación</p>';
+    codeBook += '        <p class="pt" onclick="formTable()"><span class="st">-</span> Mesa</p>';
     codeBook += '    </div>';
     codeBook += '    <div class="col-md-6">';
     codeBook += '        <div class="row row-book-form animated fadeIn fast">';
@@ -201,7 +270,7 @@ function setBook() {
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
     codeBook += '                        <select id="personas" class="form-control" required>';
-    codeBook += '                                <option selected value="0">Personas</option>';
+    codeBook += '                                <option value="0">Personas</option>';
     codeBook += '                                <option value="1">1</option>';
     codeBook += '                                <option value="2">2</option>';
     codeBook += '                                <option value="3">3</option>';
@@ -219,13 +288,13 @@ function setBook() {
     codeBook += '                    </div>';
     codeBook += '                    <div class="form-group mx-sm-3">';
     codeBook += '                        <select id="nhab" class="form-control" required>';
-    codeBook += '                                <option selected value="0">Habitaciones</option>';
+    codeBook += '                                <option value="0">Habitaciones</option>';
     codeBook += '                                <option value="1">1</option>';
     codeBook += '                                <option value="2">2</option>';
     codeBook += '                                <option value="3">3</option>';
     codeBook += '                        </select>';
     codeBook += '                    </div>';
-    codeBook += '                    <button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
+    codeBook += '                    <button type="submit" class="btn btn-default">RESERVAR HABITACIÓN</button>';
     codeBook += '                </form>';
     codeBook += '            </div>';
     codeBook += '        </div>';
@@ -234,7 +303,7 @@ function setBook() {
     codeBook += '<form class="form-mobile" action="reservaR.html" method="post" onsubmit="return validarTable()">';
     codeBook += '<div class="form-group">';
     codeBook += '<select id="personast" class="form-control" required>';
-    codeBook += '                        <option selected value="0">Personas</option>';
+    codeBook += '                        <option value="0">Personas</option>';
     codeBook += '                        <option value="1">1</option>';
     codeBook += '                        <option value="2">2</option>';
     codeBook += '                        <option value="3">4</option>';
@@ -252,7 +321,7 @@ function setBook() {
     codeBook += '</div>';
     codeBook += '<div class="form-group">';
     codeBook += '<select id="tablehour" class="form-control" required>';
-    codeBook += '                        <option selected value="0">Hora</option>';
+    codeBook += '                        <option value="0">Hora</option>';
     codeBook += '                        <option value="1">14:00</option>';
     codeBook += '                        <option value="2">14:15</option>';
     codeBook += '                        <option value="3">14:30</option>';
@@ -317,35 +386,35 @@ function setReserva() {
     var codeReserva = '';
     codeReserva += '<div class="row row-stay-form">';
     codeReserva += '      <div class="col-md-12 col-sm-12 col-lg-12 col-stay-form">';
-    codeReserva += '<form class="form-inline" action="reservaR.html" method="post" onsubmit="return validarRoom()">';
+    codeReserva += '<form class="form-inline" action="#" method="post" onsubmit="return validarRoom2()">';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<label for="inputCheckIn" class="sr-only">Check-In</label>';
-    codeReserva += '<input type="date" class="form-control" id="checkin" placeholder="Check-In" value"Chek-In">';
+    codeReserva += '<input type="date" class="form-control" id="checkin2" placeholder="Check-In" required>';
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
     codeReserva += '<label for="inputCheckOut" class="sr-only">Check-Out</label>';
-    codeReserva += '<input type="date" class="form-control" id="checkout" placeholder="Check-Out">';
+    codeReserva += '<input type="date" class="form-control" id="checkout2" placeholder="Check-Out" required>';
     codeReserva += '</div>';
+    codeReserva += '                    <div class="form-group mx-sm-3">';
+    codeReserva += '                        <select id="personas2" class="form-control" required>';
+    codeReserva += '                                <option selected value="0">Personas</option>';
+    codeReserva += '                                <option value="1">1</option>';
+    codeReserva += '                                <option value="2">2</option>';
+    codeReserva += '                                <option value="3">3</option>';
+    codeReserva += '                                <option value="4">4</option>';
+    codeReserva += '                                <option value="5">5</option>';
+    codeReserva += '                                <option value="6">6</option>';
+    codeReserva += '                            </select>';
+    codeReserva += '                    </div>';
     codeReserva += '<div class="form-group mx-sm-3">';
-    codeReserva += '<select id="personas" class="form-control">';
-    codeReserva += '                        <option selected value="0">Personas</option>';
-    codeReserva += '                        <option value="1">1</option>';
-    codeReserva += '                        <option value="2">2</option>';
-    codeReserva += '                        <option value="3">3</option>';
-    codeReserva += '                        <option value="4">4</option>';
-    codeReserva += '                        <option value="5">5</option>';
-    codeReserva += '                        <option value="6">6</option>';
-    codeReserva += '                    </select>';
-    codeReserva += '</div>';
-    codeReserva += '<div class="form-group mx-sm-3">';
-    codeReserva += '    <select id="tipo" class="form-control">';
+    codeReserva += '    <select id="tipo2" class="form-control" required>';
     codeReserva += '                        <option selected value="0">Tipo</option>';
     codeReserva += '                        <option value="Standar">Standar</option>';
     codeReserva += '                        <option value="Deluxe">Deluxe</option>';
     codeReserva += '                    </select>';
     codeReserva += '</div>';
     codeReserva += '<div class="form-group mx-sm-3">';
-    codeReserva += '    <select id="nhab" class="form-control">';
+    codeReserva += '    <select id="nhab2" class="form-control" required>';
     codeReserva += '                        <option selected value="0">Habitaciones</option>';
     codeReserva += '                        <option value="1">1</option>';
     codeReserva += '                        <option value="2">2</option>';
@@ -353,7 +422,7 @@ function setReserva() {
     codeReserva += '            </select>';
     codeReserva += '</div>';
 
-    codeReserva += '<button type="submit" class="btn btn-default">COMPROBAR DISPONIBILIDAD</button>';
+    codeReserva += '<button type="submit" class="btn btn-default">RESERVAR HABITACIÓN</button>';
 
     codeReserva += '</form>';
     codeReserva += '</div>';
@@ -402,7 +471,7 @@ function setHeader() {
     codeHeader += ' <a class="nav-a fav2" href="index.html#"><img class="fav2" src="../img/fav2.png" alt="logo"></a>';
     codeHeader += '    </div>';
     codeHeader += '    <div class="col-md-2 col-sm-2 nav-col-otro">';
-    codeHeader += '       <span style="color:white;font-size:14px;cursor:pointer;letter-spacing: 2px;" onclick="openBook()">BOOK NOW</span>';
+    codeHeader += '       <span style="color:white;font-size:14px;cursor:pointer;letter-spacing: 2px;" onclick="openBook()">RESERVAR</span>';
     codeHeader += '    </div>';
     codeHeader += '</nav>';
     codeHeader += '    </div>';

@@ -61,14 +61,14 @@
     font-size: 18px;
     color: white;
     background-color: #10253d;
-    padding: 110px;
+    padding: 180px 110px;
 }
 
 .col-us-4-white {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     color: black;
-    padding: 110px;
+    padding: 180px 110px;
     line-height: 30px;
 }
 

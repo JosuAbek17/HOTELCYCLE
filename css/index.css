@@ -45,9 +45,9 @@ body {
 }
 
 .col-home button:hover {
-    color: #ff0458;
+    color: white;
     font-weight: bold;
-    border: solid 1px #ff0458;
+    border: solid 1px #10253d;
     background-color: #10253d;
 }
 
@@ -401,7 +401,9 @@ color: #ff0458;
 }
 
 .col-stay-room-desc {
-    margin: 0;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
     padding: 0;
 }
 
@@ -460,7 +462,9 @@ color: #ff0458;
 }
 
 .col-stay-food-desc {
-    margin: 0;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
     padding: 0;
 }
 
@@ -624,7 +628,9 @@ color: #ff0458;
 }
 
 .col-stay-act-desc {
-    margin: 0;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
     padding: 0;
 }
 
@@ -1393,7 +1399,7 @@ left: 0; */
 
 /* Media Queries */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .logotit {
         display: none;
     }
@@ -1643,7 +1649,7 @@ left: 0; */
         top: 30%;
         left: 50%;
     }
-    .reserva form {
+    .credit-card-div {
         width: 100%;
     }
     .row-rooms {

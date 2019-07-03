@@ -41,9 +41,9 @@ function setComida() {
     var codeComida = '';
     codeComida += '<div class="row row-cont">';
     codeComida += '      <div class="col-md-12 col-sm-12 col-lg-12 col-cont">';
-    codeComida += '<form class="form-inline" action="reservaR.html" method="post" onsubmit="return validarTable()">';
+    codeComida += '<form class="form-inline" action="reservaR.html" method="post" onsubmit="return validarTable2()">';
     codeComida += '<div class="form-group">';
-    codeComida += '<select id="personast" class="form-control" required>';
+    codeComida += '<select id="personast2" class="form-control" required>';
     codeComida += '                        <option selected value="0">Personas</option>';
     codeComida += '                        <option value="1">1</option>';
     codeComida += '                        <option value="2">2</option>';
@@ -58,10 +58,10 @@ function setComida() {
     codeComida += '</div>';
     codeComida += '<div class="form-group">';
     codeComida += '<label for="inputCheckIn" class="sr-only">Check-In</label>';
-    codeComida += '<input type="date" class="form-control" id="checkint" placeholder="Check-In" value"Chek-In" required>';
+    codeComida += '<input type="date" class="form-control" id="checkint2" placeholder="Check-In" value"Chek-In" required>';
     codeComida += '</div>';
     codeComida += '<div class="form-group">';
-    codeComida += '<select id="tablehour" class="form-control" required>';
+    codeComida += '<select id="tablehour2" class="form-control" required>';
     codeComida += '                        <option selected value="0">Hora</option>';
     codeComida += '                        <option value="1">14:00</option>';
     codeComida += '                        <option value="2">14:15</option>';
